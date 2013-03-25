@@ -1,0 +1,4230 @@
+<VisualStudioProject>
+    <VisualBasic
+        ProjectType = "Web"
+        ProductVersion = "7.10.6030"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{9F5CD35B-28FB-4D08-BCC2-B6356BAE3EFE}"
+        SccProjectName = '"$/cimaweb_1", BAAAAAAA'
+        SccLocalPath = "."
+        SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "cimaweb"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                OptionCompare = "Binary"
+                OptionExplicit = "On"
+                OptionStrict = "Off"
+                RootNamespace = "cimaweb"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Release"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                />
+                <Reference
+                    Name = "System.Web"
+                    AssemblyName = "System.Web"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+                <Reference
+                    Name = "system.web.services"
+                    AssemblyName = "System.Web.Services"
+                    HintPath = "..\..\windows\assembly\gac\system.web.services\1.0.5000.0__b03f5f7f11d50a3a\system.web.services.dll"
+                />
+                <Reference
+                    Name = "crystaldecisions.shared"
+                    AssemblyName = "CrystalDecisions.Shared"
+                    HintPath = "..\..\windows\assembly\gac\crystaldecisions.shared\9.1.5000.0__692fbea5521e1304\crystaldecisions.shared.dll"
+                />
+                <Reference
+                    Name = "crystaldecisions.crystalreports.engine"
+                    AssemblyName = "CrystalDecisions.CrystalReports.Engine"
+                    HintPath = "..\..\windows\assembly\gac\crystaldecisions.crystalreports.engine\9.1.5000.0__692fbea5521e1304\crystaldecisions.crystalreports.engine.dll"
+                />
+                <Reference
+                    Name = "crystaldecisions.reportsource"
+                    AssemblyName = "CrystalDecisions.ReportSource"
+                    HintPath = "..\..\windows\assembly\gac\crystaldecisions.reportsource\9.1.5000.0__692fbea5521e1304\crystaldecisions.reportsource.dll"
+                />
+                <Reference
+                    Name = "system.directoryservices"
+                    AssemblyName = "System.DirectoryServices"
+                    HintPath = "..\WINNT\Microsoft.NET\Framework\v1.1.4322\system.directoryservices.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "CrystalDecisions.Web"
+                    AssemblyName = "CrystalDecisions.Web"
+                    HintPath = "..\Archivos de programa\Archivos comunes\Crystal Decisions\1.1\Managed\CrystalDecisions.Web.dll"
+                />
+                <Reference
+                    Name = "CrystalEnterpriseLib"
+                    AssemblyName = "CrystalEnterpriseLib"
+                    HintPath = "..\Archivos de programa\Archivos comunes\Crystal Decisions\1.1\Managed\CrystalEnterpriseLib.dll"
+                />
+                <Reference
+                    Name = "CrystalInfoStoreLib"
+                    AssemblyName = "CrystalInfoStoreLib"
+                    HintPath = "..\Archivos de programa\Archivos comunes\Crystal Decisions\1.1\Managed\CrystalInfoStoreLib.dll"
+                />
+                <Reference
+                    Name = "CrystalReportPluginLib"
+                    AssemblyName = "CrystalReportPluginLib"
+                    HintPath = "..\Archivos de programa\Archivos comunes\Crystal Decisions\1.1\Managed\CrystalReportPluginLib.dll"
+                />
+                <Reference
+                    Name = "CIMA_Clases"
+                    Project = "{F8F56876-D8F8-46A8-9AC0-6EBE7F230390}"
+                    Package = "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+                />
+                <Reference
+                    Name = "Microsoft.VisualBasic"
+                    AssemblyName = "Microsoft.VisualBasic"
+                    HintPath = "..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\Microsoft.VisualBasic.dll"
+                />
+                <Reference
+                    Name = "System.Management"
+                    AssemblyName = "System.Management"
+                    HintPath = "..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Management.dll"
+                />
+                <Reference
+                    Name = "WebControlCIMA"
+                    Project = "{DC6FAF05-A7EF-43BC-8ABF-DAD0FCA58BDF}"
+                    Package = "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+                />
+                <Reference
+                    Name = "Microsoft.Web.Services2"
+                    AssemblyName = "Microsoft.Web.Services2"
+                    HintPath = "bin\Microsoft.Web.Services2.dll"
+                />
+                <Reference
+                    Name = "MSXML2"
+                    Guid = "{F5078F18-C551-11D3-89B9-0000F81FE221}"
+                    VersionMajor = "2"
+                    VersionMinor = "6"
+                    Lcid = "0"
+                    WrapperTool = "tlbimp"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "System" />
+                <Import Namespace = "System.Collections" />
+                <Import Namespace = "System.Configuration" />
+                <Import Namespace = "System.Data" />
+                <Import Namespace = "System.Drawing" />
+                <Import Namespace = "System.Web" />
+                <Import Namespace = "System.Web.UI" />
+                <Import Namespace = "System.Web.UI.HtmlControls" />
+                <Import Namespace = "System.Web.UI.WebControls" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "form_resultados.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "form_resultados.aspx.vb"
+                    DependentUpon = "form_resultados.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "form_resultados.aspx.resx"
+                    DependentUpon = "form_resultados.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Global.asax"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Global.asax.vb"
+                    DependentUpon = "Global.asax"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Global.asax.resx"
+                    DependentUpon = "Global.asax.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "inicio.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "lat_derecho.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "lat_izquierdo.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "login.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "login.aspx.vb"
+                    DependentUpon = "login.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "login.aspx.resx"
+                    DependentUpon = "login.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "pagina_en_construccion.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "pagina_no_disponible.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Styles.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "usuario_no_validado.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Web.config"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\CIMA_Clases.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\zeus.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\zeus.pdb"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "crystal_reports\cr_obj_clave.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "cr_obj_clave.vb"
+                />
+                <File
+                    RelPath = "crystal_reports\cr_obj_clave.vb"
+                    DependentUpon = "cr_obj_clave.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "crystal_reports\cr_obj_clave.resx"
+                    DependentUpon = "cr_obj_clave.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "crystal_reports\cr_obj_hoja_citacion.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "cr_obj_hoja_citacion2.vb"
+                />
+                <File
+                    RelPath = "crystal_reports\cr_obj_hoja_citacion.vb"
+                    DependentUpon = "cr_obj_hoja_citacion.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "crystal_reports\cr_obj_hoja_citacion.resx"
+                    DependentUpon = "cr_obj_hoja_citacion.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "crystal_reports\cr_obj_hoja_citacion2.vb"
+                    DependentUpon = "cr_obj_hoja_citacion.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "crystal_reports\cr_obj_migracion.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "cr_obj_migracion.vb"
+                />
+                <File
+                    RelPath = "crystal_reports\cr_obj_migracion.vb"
+                    DependentUpon = "cr_obj_migracion.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "crystal_reports\cr_obj_mutuas.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "cr_obj_mutuas.vb"
+                />
+                <File
+                    RelPath = "crystal_reports\cr_obj_mutuas.vb"
+                    DependentUpon = "cr_obj_mutuas.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "crystal_reports\cr_obj_prestaciones.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "cr_obj_prestaciones.vb"
+                />
+                <File
+                    RelPath = "crystal_reports\cr_obj_prestaciones.vb"
+                    DependentUpon = "cr_obj_prestaciones.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "crystal_reports\cr_obj_receta.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "cr_obj_receta.vb"
+                />
+                <File
+                    RelPath = "crystal_reports\cr_obj_receta.vb"
+                    DependentUpon = "cr_obj_receta.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "css\cima.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "datasets\ds_agen.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_agen.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_agen.vb"
+                    DependentUpon = "ds_agen.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_agen.xsx"
+                    DependentUpon = "ds_agen.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_agen_agenname.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_agen_agenname.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_agen_agenname.vb"
+                    DependentUpon = "ds_agen_agenname.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_agen_agenname.xsx"
+                    DependentUpon = "ds_agen_agenname.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_agen_tabla.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_agen_tabla.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_agen_tabla.vb"
+                    DependentUpon = "ds_agen_tabla.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_agen_tabla.xsx"
+                    DependentUpon = "ds_agen_tabla.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_agendas.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_agendas.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_agendas.vb"
+                    DependentUpon = "ds_agendas.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_agendas.xsx"
+                    DependentUpon = "ds_agendas.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_agendas_garantes.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_agendas_garantes.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_agendas_garantes.vb"
+                    DependentUpon = "ds_agendas_garantes.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_agendas_garantes.xsx"
+                    DependentUpon = "ds_agendas_garantes.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_agenproc.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_agenproc.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_agenproc.vb"
+                    DependentUpon = "ds_agenproc.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_agenproc.xsx"
+                    DependentUpon = "ds_agenproc.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_antecedentes.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_antecedentes.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_antecedentes.vb"
+                    DependentUpon = "ds_antecedentes.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_antecedentes.xsx"
+                    DependentUpon = "ds_antecedentes.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_apporend.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_apporend.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_apporend.vb"
+                    DependentUpon = "ds_apporend.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_apporend.xsx"
+                    DependentUpon = "ds_apporend.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_autorizaciones.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_autorizaciones.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_autorizaciones.vb"
+                    DependentUpon = "ds_autorizaciones.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_autorizaciones.xsx"
+                    DependentUpon = "ds_autorizaciones.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_bookcanc.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_bookcanc.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_bookcanc.vb"
+                    DependentUpon = "ds_bookcanc.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_bookcanc.xsx"
+                    DependentUpon = "ds_bookcanc.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_btimetab.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_btimetab.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_btimetab.vb"
+                    DependentUpon = "ds_btimetab.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_btimetab.xsx"
+                    DependentUpon = "ds_btimetab.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_busca_huecos.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_busca_huecos.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_busca_huecos.vb"
+                    DependentUpon = "ds_busca_huecos.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_busca_huecos.xsx"
+                    DependentUpon = "ds_busca_huecos.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_busca_pers.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_busca_pers.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_busca_pers.vb"
+                    DependentUpon = "ds_busca_pers.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_busca_pers.xsx"
+                    DependentUpon = "ds_busca_pers.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_busca_pers_filtro.vb"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "datasets\ds_busca_pers_filtro.xsd"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "datasets\ds_busca_pers_filtro.xsx"
+                    DependentUpon = "ds_busca_pers_filtro.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_cabecera.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_cabecera.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_cabecera.vb"
+                    DependentUpon = "ds_cabecera.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_cabecera.xsx"
+                    DependentUpon = "ds_cabecera.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_campos.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_campos.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_campos.vb"
+                    DependentUpon = "ds_campos.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_campos.xsx"
+                    DependentUpon = "ds_campos.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_carga_cetir.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_carga_cetir.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_carga_cetir.vb"
+                    DependentUpon = "ds_carga_cetir.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_carga_cetir.xsx"
+                    DependentUpon = "ds_carga_cetir.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_carga_mod_cita.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_carga_mod_cita.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_carga_mod_cita.vb"
+                    DependentUpon = "ds_carga_mod_cita.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_carga_mod_cita.xsx"
+                    DependentUpon = "ds_carga_mod_cita.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_cie9.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_cie9.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_cie9.vb"
+                    DependentUpon = "ds_cie9.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_cie9.xsx"
+                    DependentUpon = "ds_cie9.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_alertas.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_cima_alertas.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_alertas.vb"
+                    DependentUpon = "ds_cima_alertas.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_alertas.xsx"
+                    DependentUpon = "ds_cima_alertas.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_coberturas.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_cima_coberturas.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_coberturas.vb"
+                    DependentUpon = "ds_cima_coberturas.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_coberturas.xsx"
+                    DependentUpon = "ds_cima_coberturas.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_epis_claves.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_cima_epis_claves.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_epis_claves.vb"
+                    DependentUpon = "ds_cima_epis_claves.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_epis_claves.xsx"
+                    DependentUpon = "ds_cima_epis_claves.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_epis_informes.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_cima_epis_informes.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_epis_informes.vb"
+                    DependentUpon = "ds_cima_epis_informes.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_epis_informes.xsx"
+                    DependentUpon = "ds_cima_epis_informes.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_garantes.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_cima_garantes.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_garantes.vb"
+                    DependentUpon = "ds_cima_garantes.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_garantes.xsx"
+                    DependentUpon = "ds_cima_garantes.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_garantes_epis.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_cima_garantes_epis.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_garantes_epis.vb"
+                    DependentUpon = "ds_cima_garantes_epis.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_garantes_epis.xsx"
+                    DependentUpon = "ds_cima_garantes_epis.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_informes_master.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_cima_informes_master.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_informes_master.vb"
+                    DependentUpon = "ds_cima_informes_master.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_informes_master.xsx"
+                    DependentUpon = "ds_cima_informes_master.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_notas.vb"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_notas.xsd"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_notas.xsx"
+                    DependentUpon = "ds_cima_notas.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_novedades.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_cima_novedades.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_novedades.vb"
+                    DependentUpon = "ds_cima_novedades.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_novedades.xsx"
+                    DependentUpon = "ds_cima_novedades.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_prestaciones_cetir.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_cima_prestaciones_cetir.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_prestaciones_cetir.vb"
+                    DependentUpon = "ds_cima_prestaciones_cetir.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_prestaciones_cetir.xsx"
+                    DependentUpon = "ds_cima_prestaciones_cetir.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_SANITAS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_cima_SANITAS.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_SANITAS.vb"
+                    DependentUpon = "ds_cima_SANITAS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_SANITAS.xsx"
+                    DependentUpon = "ds_cima_SANITAS.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_SNT_no_TIS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_cima_SNT_no_TIS.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_SNT_no_TIS.vb"
+                    DependentUpon = "ds_cima_SNT_no_TIS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_cima_SNT_no_TIS.xsx"
+                    DependentUpon = "ds_cima_SNT_no_TIS.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_citas.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_citas.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_citas.vb"
+                    DependentUpon = "ds_citas.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_citas.xsx"
+                    DependentUpon = "ds_citas.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_consentimientos.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_consentimientos.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_consentimientos.vb"
+                    DependentUpon = "ds_consentimientos.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_consentimientos.xsx"
+                    DependentUpon = "ds_consentimientos.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_covegrou.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_covegrou.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_covegrou.vb"
+                    DependentUpon = "ds_covegrou.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_covegrou.xsx"
+                    DependentUpon = "ds_covegrou.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_cr_prestaciones.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_cr_prestaciones.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_cr_prestaciones.vb"
+                    DependentUpon = "ds_cr_prestaciones.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_cr_prestaciones.xsx"
+                    DependentUpon = "ds_cr_prestaciones.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_csta.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_csta.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_csta.vb"
+                    DependentUpon = "ds_csta.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_csta.xsx"
+                    DependentUpon = "ds_csta.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_curso_clinico.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_curso_clinico.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_curso_clinico.vb"
+                    DependentUpon = "ds_curso_clinico.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_curso_clinico.xsx"
+                    DependentUpon = "ds_curso_clinico.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_datos_captura.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_datos_captura.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_datos_captura.vb"
+                    DependentUpon = "ds_datos_captura.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_datos_captura.xsx"
+                    DependentUpon = "ds_datos_captura.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_datos_captura_csta.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_datos_captura_csta.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_datos_captura_csta.vb"
+                    DependentUpon = "ds_datos_captura_csta.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_datos_captura_csta.xsx"
+                    DependentUpon = "ds_datos_captura_csta.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_datos_captura_cstahper.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_datos_captura_cstahper.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_datos_captura_cstahper.vb"
+                    DependentUpon = "ds_datos_captura_cstahper.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_datos_captura_cstahper.xsx"
+                    DependentUpon = "ds_datos_captura_cstahper.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_datos_captura_garante.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_datos_captura_garante.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_datos_captura_garante.vb"
+                    DependentUpon = "ds_datos_captura_garante.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_datos_captura_garante.xsx"
+                    DependentUpon = "ds_datos_captura_garante.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_datos_captura_garante_poliza.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_datos_captura_garante_poliza.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_datos_captura_garante_poliza.vb"
+                    DependentUpon = "ds_datos_captura_garante_poliza.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_datos_captura_garante_poliza.xsx"
+                    DependentUpon = "ds_datos_captura_garante_poliza.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_datos_captura_prestaciones_agen.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_datos_captura_prestaciones_agen.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_datos_captura_prestaciones_agen.vb"
+                    DependentUpon = "ds_datos_captura_prestaciones_agen.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_datos_captura_prestaciones_agen.xsx"
+                    DependentUpon = "ds_datos_captura_prestaciones_agen.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_diagnosticos.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_diagnosticos.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_diagnosticos.vb"
+                    DependentUpon = "ds_diagnosticos.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_diagnosticos.xsx"
+                    DependentUpon = "ds_diagnosticos.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_dias.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_dias.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_dias.vb"
+                    DependentUpon = "ds_dias.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_dias.xsx"
+                    DependentUpon = "ds_dias.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_drugsele.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_drugsele.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_drugsele.vb"
+                    DependentUpon = "ds_drugsele.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_drugsele.xsx"
+                    DependentUpon = "ds_drugsele.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_elije_cama.vb"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "datasets\ds_elije_cama.xsd"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "datasets\ds_elije_cama.xsx"
+                    DependentUpon = "ds_elije_cama.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_epis.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_epis.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_epis.vb"
+                    DependentUpon = "ds_epis.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_epis.xsx"
+                    DependentUpon = "ds_epis.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_episcode.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_episcode.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_episcode.vb"
+                    DependentUpon = "ds_episcode.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_episcode.xsx"
+                    DependentUpon = "ds_episcode.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_episodios_multicitas.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_episodios_multicitas.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_episodios_multicitas.vb"
+                    DependentUpon = "ds_episodios_multicitas.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_episodios_multicitas.xsx"
+                    DependentUpon = "ds_episodios_multicitas.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_firm.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_firm.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_firm.vb"
+                    DependentUpon = "ds_firm.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_firm.xsx"
+                    DependentUpon = "ds_firm.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_firm_garantes.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_firm_garantes.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_firm_garantes.vb"
+                    DependentUpon = "ds_firm_garantes.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_firm_garantes.xsx"
+                    DependentUpon = "ds_firm_garantes.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_franja_horaria.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_franja_horaria.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_franja_horaria.vb"
+                    DependentUpon = "ds_franja_horaria.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_franja_horaria.xsx"
+                    DependentUpon = "ds_franja_horaria.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_garante_hcis.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_garante_hcis.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_garante_hcis.vb"
+                    DependentUpon = "ds_garante_hcis.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_garante_hcis.xsx"
+                    DependentUpon = "ds_garante_hcis.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_garantes.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_garantes.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_garantes.vb"
+                    DependentUpon = "ds_garantes.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_garantes.xsx"
+                    DependentUpon = "ds_garantes.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_grupos.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_grupos.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_grupos.vb"
+                    DependentUpon = "ds_grupos.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_grupos.xsx"
+                    DependentUpon = "ds_grupos.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_grupos_agendas.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_grupos_agendas.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_grupos_agendas.vb"
+                    DependentUpon = "ds_grupos_agendas.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_grupos_agendas.xsx"
+                    DependentUpon = "ds_grupos_agendas.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_hcis_agenda.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_hcis_agenda.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_hcis_agenda.vb"
+                    DependentUpon = "ds_hcis_agenda.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_hcis_agenda.xsx"
+                    DependentUpon = "ds_hcis_agenda.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_hcis_servicio.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_hcis_servicio.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_hcis_servicio.vb"
+                    DependentUpon = "ds_hcis_servicio.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_hcis_servicio.xsx"
+                    DependentUpon = "ds_hcis_servicio.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_historico_camas.vb"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "datasets\ds_historico_camas.xsd"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "datasets\ds_historico_camas.xsx"
+                    DependentUpon = "ds_historico_camas.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_hoja_citacion.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_hoja_citacion.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_hoja_citacion.vb"
+                    DependentUpon = "ds_hoja_citacion.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_hoja_citacion.xsx"
+                    DependentUpon = "ds_hoja_citacion.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_hora_maxima.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_hora_maxima.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_hora_maxima.vb"
+                    DependentUpon = "ds_hora_maxima.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_hora_maxima.xsx"
+                    DependentUpon = "ds_hora_maxima.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_horas_visita.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_horas_visita.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_horas_visita.vb"
+                    DependentUpon = "ds_horas_visita.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_horas_visita.xsx"
+                    DependentUpon = "ds_horas_visita.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_hpro.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_hpro.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_hpro.vb"
+                    DependentUpon = "ds_hpro.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_hpro.xsx"
+                    DependentUpon = "ds_hpro.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_hpro_cetir.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_hpro_cetir.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_hpro_cetir.vb"
+                    DependentUpon = "ds_hpro_cetir.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_hpro_cetir.xsx"
+                    DependentUpon = "ds_hpro_cetir.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_hpro_cetir_precios.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_hpro_cetir_precios.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_hpro_cetir_precios.vb"
+                    DependentUpon = "ds_hpro_cetir_precios.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_hpro_cetir_precios.xsx"
+                    DependentUpon = "ds_hpro_cetir_precios.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_id_identidad.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_id_identidad.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_id_identidad.vb"
+                    DependentUpon = "ds_id_identidad.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_id_identidad.xsx"
+                    DependentUpon = "ds_id_identidad.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_idenpers.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_idenpers.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_idenpers.vb"
+                    DependentUpon = "ds_idenpers.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_idenpers.xsx"
+                    DependentUpon = "ds_idenpers.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_incidencia_episodio.vb"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "datasets\ds_incidencia_episodio.xsd"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "datasets\ds_incidencia_episodio.xsx"
+                    DependentUpon = "ds_incidencia_episodio.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_incidencias.vb"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "datasets\ds_incidencias.xsd"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "datasets\ds_incidencias.xsx"
+                    DependentUpon = "ds_incidencias.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_informes_master.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_informes_master.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_informes_master.vb"
+                    DependentUpon = "ds_informes_master.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_informes_master.xsx"
+                    DependentUpon = "ds_informes_master.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_listado_cex.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_listado_cex.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_listado_cex.vb"
+                    DependentUpon = "ds_listado_cex.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_listado_cex.xsx"
+                    DependentUpon = "ds_listado_cex.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_medicacion.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_medicacion.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_medicacion.vb"
+                    DependentUpon = "ds_medicacion.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_medicacion.xsx"
+                    DependentUpon = "ds_medicacion.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_medicacion_receta.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_medicacion_receta.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_medicacion_receta.vb"
+                    DependentUpon = "ds_medicacion_receta.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_medicacion_receta.xsx"
+                    DependentUpon = "ds_medicacion_receta.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_medicos.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_medicos.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_medicos.vb"
+                    DependentUpon = "ds_medicos.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_medicos.xsx"
+                    DependentUpon = "ds_medicos.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_migracion.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_migracion.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_migracion.vb"
+                    DependentUpon = "ds_migracion.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_migracion.xsx"
+                    DependentUpon = "ds_migracion.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_movil.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_movil.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_movil.vb"
+                    DependentUpon = "ds_movil.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_movil.xsx"
+                    DependentUpon = "ds_movil.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_multicitas.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_multicitas.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_multicitas.vb"
+                    DependentUpon = "ds_multicitas.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_multicitas.xsx"
+                    DependentUpon = "ds_multicitas.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_nombre_paciente.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_nombre_paciente.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_nombre_paciente.vb"
+                    DependentUpon = "ds_nombre_paciente.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_nombre_paciente.xsx"
+                    DependentUpon = "ds_nombre_paciente.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_numero.vb"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "datasets\ds_numero.xsd"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "datasets\ds_numero.xsx"
+                    DependentUpon = "ds_numero.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_pacientes.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_pacientes.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_pacientes.vb"
+                    DependentUpon = "ds_pacientes.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_pacientes.xsx"
+                    DependentUpon = "ds_pacientes.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_par_SNT_CIMA.vb"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "datasets\ds_par_SNT_CIMA.xsd"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "datasets\ds_par_SNT_CIMA.xsx"
+                    DependentUpon = "ds_par_SNT_CIMA.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_par_SNT_CIMA_garante.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_par_SNT_CIMA_garante.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_par_SNT_CIMA_garante.vb"
+                    DependentUpon = "ds_par_SNT_CIMA_garante.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_par_SNT_CIMA_garante.xsx"
+                    DependentUpon = "ds_par_SNT_CIMA_garante.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_pers.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_pers.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_pers.vb"
+                    DependentUpon = "ds_pers.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_pers.xsx"
+                    DependentUpon = "ds_pers.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_pers_grupos.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_pers_grupos.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_pers_grupos.vb"
+                    DependentUpon = "ds_pers_grupos.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_pers_grupos.xsx"
+                    DependentUpon = "ds_pers_grupos.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_plantas.vb"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "datasets\ds_plantas.xsd"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "datasets\ds_plantas.xsx"
+                    DependentUpon = "ds_plantas.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_plantillas.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_plantillas.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_plantillas.vb"
+                    DependentUpon = "ds_plantillas.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_plantillas.xsx"
+                    DependentUpon = "ds_plantillas.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_poliza.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_poliza.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_poliza.vb"
+                    DependentUpon = "ds_poliza.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_poliza.xsx"
+                    DependentUpon = "ds_poliza.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_prestaciones.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_prestaciones.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_prestaciones.vb"
+                    DependentUpon = "ds_prestaciones.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_prestaciones.xsx"
+                    DependentUpon = "ds_prestaciones.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_recuperar_camas.vb"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "datasets\ds_recuperar_camas.xsd"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "datasets\ds_recuperar_camas.xsx"
+                    DependentUpon = "ds_recuperar_camas.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_recuperarDatosCita.vb"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "datasets\ds_recuperarDatosCita.xsd"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "datasets\ds_recuperarDatosCita.xsx"
+                    DependentUpon = "ds_recuperarDatosCita.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_reso.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_reso.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_reso.vb"
+                    DependentUpon = "ds_reso.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_reso.xsx"
+                    DependentUpon = "ds_reso.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_siaf.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_siaf.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_siaf.vb"
+                    DependentUpon = "ds_siaf.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_siaf.xsx"
+                    DependentUpon = "ds_siaf.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_terr.vb"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "datasets\ds_terr.xsd"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "datasets\ds_terr.xsx"
+                    DependentUpon = "ds_terr.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_troa.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_troa.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_troa.vb"
+                    DependentUpon = "ds_troa.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_troa.xsx"
+                    DependentUpon = "ds_troa.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_tsex.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_tsex.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_tsex.vb"
+                    DependentUpon = "ds_tsex.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_tsex.xsx"
+                    DependentUpon = "ds_tsex.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_usuarios.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_usuarios.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_usuarios.vb"
+                    DependentUpon = "ds_usuarios.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_usuarios.xsx"
+                    DependentUpon = "ds_usuarios.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_usuarios_agendas.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_usuarios_agendas.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_usuarios_agendas.vb"
+                    DependentUpon = "ds_usuarios_agendas.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_usuarios_agendas.xsx"
+                    DependentUpon = "ds_usuarios_agendas.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_v_producto.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_v_producto.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_v_producto.vb"
+                    DependentUpon = "ds_v_producto.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_v_producto.xsx"
+                    DependentUpon = "ds_v_producto.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_validacion_du.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_validacion_du.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_validacion_du.vb"
+                    DependentUpon = "ds_validacion_du.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_validacion_du.xsx"
+                    DependentUpon = "ds_validacion_du.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_validacion_poliza.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ds_validacion_poliza.vb"
+                />
+                <File
+                    RelPath = "datasets\ds_validacion_poliza.vb"
+                    DependentUpon = "ds_validacion_poliza.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "datasets\ds_validacion_poliza.xsx"
+                    DependentUpon = "ds_validacion_poliza.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "datasets\ds_ver_datos.vb"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "datasets\ds_ver_datos.xsd"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "datasets\ds_ver_datos.xsx"
+                    DependentUpon = "ds_ver_datos.xsd"
+                    BuildAction = "None"
+                />
+                <Folder RelPath = "documentos\" />
+                <Folder RelPath = "documentos_rel\" />
+                <File
+                    RelPath = "formularios\form_agendas.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_agendas.aspx.vb"
+                    DependentUpon = "form_agendas.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_agendas.aspx.resx"
+                    DependentUpon = "form_agendas.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_agendas_consulta_hcis.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_agendas_consulta_hcis.aspx.vb"
+                    DependentUpon = "form_agendas_consulta_hcis.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_agendas_consulta_hcis.aspx.resx"
+                    DependentUpon = "form_agendas_consulta_hcis.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_alertas_mensajes.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_alertas_mensajes.aspx.vb"
+                    DependentUpon = "form_alertas_mensajes.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_alertas_mensajes.aspx.resx"
+                    DependentUpon = "form_alertas_mensajes.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_antecedentes.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_antecedentes.aspx.vb"
+                    DependentUpon = "form_antecedentes.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_antecedentes.aspx.resx"
+                    DependentUpon = "form_antecedentes.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_anular_cita.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_anular_cita.aspx.vb"
+                    DependentUpon = "form_anular_cita.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_anular_cita.aspx.resx"
+                    DependentUpon = "form_anular_cita.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_busca_pers.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_busca_pers.aspx.vb"
+                    DependentUpon = "form_busca_pers.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_busca_pers.aspx.resx"
+                    DependentUpon = "form_busca_pers.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_busca_pers_filtro.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_busca_pers_filtro.aspx.vb"
+                    DependentUpon = "form_busca_pers_filtro.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_busca_pers_filtro.aspx.resx"
+                    DependentUpon = "form_busca_pers_filtro.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_busca_pers_solicitar_cita.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_busca_pers_solicitar_cita.aspx.vb"
+                    DependentUpon = "form_busca_pers_solicitar_cita.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_busca_pers_solicitar_cita.aspx.resx"
+                    DependentUpon = "form_busca_pers_solicitar_cita.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_busca_persona_citas_rapidas.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_busca_persona_citas_rapidas.aspx.vb"
+                    DependentUpon = "form_busca_persona_citas_rapidas.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_busca_persona_citas_rapidas.aspx.resx"
+                    DependentUpon = "form_busca_persona_citas_rapidas.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_busca_persona_multicitas.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_busca_persona_multicitas.aspx.vb"
+                    DependentUpon = "form_busca_persona_multicitas.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_busca_persona_multicitas.aspx.resx"
+                    DependentUpon = "form_busca_persona_multicitas.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_cambio_prueba.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_cambio_prueba.aspx.vb"
+                    DependentUpon = "form_cambio_prueba.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_cambio_prueba.aspx.resx"
+                    DependentUpon = "form_cambio_prueba.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_captura.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_captura.aspx.vb"
+                    DependentUpon = "form_captura.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_captura.aspx.resx"
+                    DependentUpon = "form_captura.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_carga_facturas.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_carga_facturas.aspx.vb"
+                    DependentUpon = "form_carga_facturas.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_carga_facturas.aspx.resx"
+                    DependentUpon = "form_carga_facturas.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_cierre.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_cierre.aspx.vb"
+                    DependentUpon = "form_cierre.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_cierre.aspx.resx"
+                    DependentUpon = "form_cierre.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_citas_rapidas.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_citas_rapidas.aspx.vb"
+                    DependentUpon = "form_citas_rapidas.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_citas_rapidas.aspx.resx"
+                    DependentUpon = "form_citas_rapidas.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_consentimientos.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_consentimientos.aspx.vb"
+                    DependentUpon = "form_consentimientos.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_consentimientos.aspx.resx"
+                    DependentUpon = "form_consentimientos.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_consentimientos_genericos.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_consentimientos_genericos.aspx.vb"
+                    DependentUpon = "form_consentimientos_genericos.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_consentimientos_genericos.aspx.resx"
+                    DependentUpon = "form_consentimientos_genericos.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_curso_clinico.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_curso_clinico_foot.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_curso_clinico_foot.aspx.vb"
+                    DependentUpon = "form_curso_clinico_foot.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_curso_clinico_foot.aspx.resx"
+                    DependentUpon = "form_curso_clinico_foot.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_curso_clinico_head.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_curso_clinico_head.aspx.vb"
+                    DependentUpon = "form_curso_clinico_head.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_curso_clinico_head.aspx.resx"
+                    DependentUpon = "form_curso_clinico_head.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_curso_clinico_lat_left.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_curso_clinico_lat_left.aspx.vb"
+                    DependentUpon = "form_curso_clinico_lat_left.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_curso_clinico_lat_left.aspx.resx"
+                    DependentUpon = "form_curso_clinico_lat_left.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_diagnosticos.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_diagnosticos.aspx.vb"
+                    DependentUpon = "form_diagnosticos.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_diagnosticos.aspx.resx"
+                    DependentUpon = "form_diagnosticos.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_documentos.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_documentos.aspx.vb"
+                    DependentUpon = "form_documentos.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_documentos.aspx.resx"
+                    DependentUpon = "form_documentos.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_enlace_informes_cetir.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_enlace_informes_cetir.aspx.vb"
+                    DependentUpon = "form_enlace_informes_cetir.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_enlace_informes_cetir.aspx.resx"
+                    DependentUpon = "form_enlace_informes_cetir.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_enlace_informes_echevarne.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_enlace_informes_echevarne.aspx.vb"
+                    DependentUpon = "form_enlace_informes_echevarne.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_enlace_informes_echevarne.aspx.resx"
+                    DependentUpon = "form_enlace_informes_echevarne.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_envio_sms.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_envio_sms.aspx.vb"
+                    DependentUpon = "form_envio_sms.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_envio_sms.aspx.resx"
+                    DependentUpon = "form_envio_sms.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_episodio.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_episodio.aspx.vb"
+                    DependentUpon = "form_episodio.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_episodio.aspx.resx"
+                    DependentUpon = "form_episodio.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_generar_codigo_web.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_generar_codigo_web.aspx.vb"
+                    DependentUpon = "form_generar_codigo_web.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_generar_codigo_web.aspx.resx"
+                    DependentUpon = "form_generar_codigo_web.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_grupos.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_grupos.aspx.vb"
+                    DependentUpon = "form_grupos.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_grupos.aspx.resx"
+                    DependentUpon = "form_grupos.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_historico_laboratorio.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_historico_laboratorio.aspx.vb"
+                    DependentUpon = "form_historico_laboratorio.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_historico_laboratorio.aspx.resx"
+                    DependentUpon = "form_historico_laboratorio.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_historico_laboratorio_hcis.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_historico_laboratorio_hcis.aspx.vb"
+                    DependentUpon = "form_historico_laboratorio_hcis.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_historico_laboratorio_hcis.aspx.resx"
+                    DependentUpon = "form_historico_laboratorio_hcis.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_historico_radiologia.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_historico_radiologia.aspx.vb"
+                    DependentUpon = "form_historico_radiologia.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_historico_radiologia.aspx.resx"
+                    DependentUpon = "form_historico_radiologia.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_historico_radiologia_hcis.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_historico_radiologia_hcis.aspx.vb"
+                    DependentUpon = "form_historico_radiologia_hcis.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_historico_radiologia_hcis.aspx.resx"
+                    DependentUpon = "form_historico_radiologia_hcis.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_incidencias.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_incidencias.aspx.vb"
+                    DependentUpon = "form_incidencias.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_incidencias.aspx.resx"
+                    DependentUpon = "form_incidencias.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_listado_cex.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_listado_cex.aspx.vb"
+                    DependentUpon = "form_listado_cex.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_listado_cex.aspx.resx"
+                    DependentUpon = "form_listado_cex.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_login.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_login.aspx.vb"
+                    DependentUpon = "form_login.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_login.aspx.resx"
+                    DependentUpon = "form_login.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_agendas_garantes.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_agendas_garantes.aspx.vb"
+                    DependentUpon = "form_mantenimiento_agendas_garantes.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_agendas_garantes.aspx.resx"
+                    DependentUpon = "form_mantenimiento_agendas_garantes.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_agendas_usuario.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_agendas_usuario.aspx.vb"
+                    DependentUpon = "form_mantenimiento_agendas_usuario.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_agendas_usuario.aspx.resx"
+                    DependentUpon = "form_mantenimiento_agendas_usuario.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_consentimientos.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_consentimientos.aspx.vb"
+                    DependentUpon = "form_mantenimiento_consentimientos.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_consentimientos.aspx.resx"
+                    DependentUpon = "form_mantenimiento_consentimientos.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_documentos.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_documentos.aspx.vb"
+                    DependentUpon = "form_mantenimiento_documentos.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_documentos.aspx.resx"
+                    DependentUpon = "form_mantenimiento_documentos.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_episodios.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_episodios.aspx.vb"
+                    DependentUpon = "form_mantenimiento_episodios.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_episodios.aspx.resx"
+                    DependentUpon = "form_mantenimiento_episodios.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_hcis.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_hcis.aspx.vb"
+                    DependentUpon = "form_mantenimiento_hcis.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_hcis.aspx.resx"
+                    DependentUpon = "form_mantenimiento_hcis.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_hpro_cetir.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_hpro_cetir.aspx.vb"
+                    DependentUpon = "form_mantenimiento_hpro_cetir.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_hpro_cetir.aspx.resx"
+                    DependentUpon = "form_mantenimiento_hpro_cetir.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_hpro_cetir_precios.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_hpro_cetir_precios.aspx.vb"
+                    DependentUpon = "form_mantenimiento_hpro_cetir_precios.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_hpro_cetir_precios.aspx.resx"
+                    DependentUpon = "form_mantenimiento_hpro_cetir_precios.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_incidencias.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_incidencias.aspx.vb"
+                    DependentUpon = "form_mantenimiento_incidencias.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_incidencias.aspx.resx"
+                    DependentUpon = "form_mantenimiento_incidencias.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_informes.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_informes.aspx.vb"
+                    DependentUpon = "form_mantenimiento_informes.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_informes.aspx.resx"
+                    DependentUpon = "form_mantenimiento_informes.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_mutuas.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_mutuas.aspx.vb"
+                    DependentUpon = "form_mantenimiento_mutuas.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_mantenimiento_mutuas.aspx.resx"
+                    DependentUpon = "form_mantenimiento_mutuas.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_medicacion.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_medicacion.aspx.vb"
+                    DependentUpon = "form_medicacion.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_medicacion.aspx.resx"
+                    DependentUpon = "form_medicacion.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_medicacion_global.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_medicacion_global.aspx.vb"
+                    DependentUpon = "form_medicacion_global.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_medicacion_global.aspx.resx"
+                    DependentUpon = "form_medicacion_global.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_menu_1.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_menu_1.aspx.vb"
+                    DependentUpon = "form_menu_1.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_menu_1.aspx.resx"
+                    DependentUpon = "form_menu_1.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_menu_10.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_menu_10.aspx.vb"
+                    DependentUpon = "form_menu_10.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_menu_10.aspx.resx"
+                    DependentUpon = "form_menu_10.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_menu_2.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_menu_2.aspx.vb"
+                    DependentUpon = "form_menu_2.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_menu_2.aspx.resx"
+                    DependentUpon = "form_menu_2.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_menu_3.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_menu_3.aspx.vb"
+                    DependentUpon = "form_menu_3.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_menu_3.aspx.resx"
+                    DependentUpon = "form_menu_3.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_menu_4.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_menu_4.aspx.vb"
+                    DependentUpon = "form_menu_4.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_menu_4.aspx.resx"
+                    DependentUpon = "form_menu_4.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_menu_5.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_menu_5.aspx.vb"
+                    DependentUpon = "form_menu_5.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_menu_5.aspx.resx"
+                    DependentUpon = "form_menu_5.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_menu_6.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_menu_6.aspx.vb"
+                    DependentUpon = "form_menu_6.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_menu_6.aspx.resx"
+                    DependentUpon = "form_menu_6.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_menu_7.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_menu_7.aspx.vb"
+                    DependentUpon = "form_menu_7.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_menu_7.aspx.resx"
+                    DependentUpon = "form_menu_7.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_menu_8.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_menu_8.aspx.vb"
+                    DependentUpon = "form_menu_8.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_menu_8.aspx.resx"
+                    DependentUpon = "form_menu_8.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_menu_9.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_menu_9.aspx.vb"
+                    DependentUpon = "form_menu_9.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_menu_9.aspx.resx"
+                    DependentUpon = "form_menu_9.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_multicitas.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_multicitas.aspx.vb"
+                    DependentUpon = "form_multicitas.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_multicitas.aspx.resx"
+                    DependentUpon = "form_multicitas.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_nuevo_usuario.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_nuevo_usuario.aspx.vb"
+                    DependentUpon = "form_nuevo_usuario.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_nuevo_usuario.aspx.resx"
+                    DependentUpon = "form_nuevo_usuario.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_num_poliza.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_ocupacion_camas.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_ocupacion_camas.aspx.vb"
+                    DependentUpon = "form_ocupacion_camas.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_ocupacion_camas.aspx.resx"
+                    DependentUpon = "form_ocupacion_camas.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_pers.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_pers.aspx.vb"
+                    DependentUpon = "form_pers.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_pers.aspx.resx"
+                    DependentUpon = "form_pers.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_pers_externos.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_pers_externos.aspx.vb"
+                    DependentUpon = "form_pers_externos.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_pers_externos.aspx.resx"
+                    DependentUpon = "form_pers_externos.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_poliza.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_poliza.aspx.vb"
+                    DependentUpon = "form_poliza.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_poliza.aspx.resx"
+                    DependentUpon = "form_poliza.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_prestaciones.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_prestaciones.aspx.vb"
+                    DependentUpon = "form_prestaciones.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_prestaciones.aspx.resx"
+                    DependentUpon = "form_prestaciones.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_reprogramar_cita.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_reprogramar_cita.aspx.vb"
+                    DependentUpon = "form_reprogramar_cita.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_reprogramar_cita.aspx.resx"
+                    DependentUpon = "form_reprogramar_cita.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_seleccion_consentimientos.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_seleccion_consentimientos.aspx.vb"
+                    DependentUpon = "form_seleccion_consentimientos.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_seleccion_consentimientos.aspx.resx"
+                    DependentUpon = "form_seleccion_consentimientos.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_seleccion_informes.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_seleccion_informes.aspx.vb"
+                    DependentUpon = "form_seleccion_informes.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_seleccion_informes.aspx.resx"
+                    DependentUpon = "form_seleccion_informes.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_seleccion_informes_episodio.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_seleccion_informes_episodio.aspx.vb"
+                    DependentUpon = "form_seleccion_informes_episodio.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_seleccion_informes_episodio.aspx.resx"
+                    DependentUpon = "form_seleccion_informes_episodio.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_seleccion_listado_mutuas.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_seleccion_listado_mutuas.aspx.vb"
+                    DependentUpon = "form_seleccion_listado_mutuas.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_seleccion_listado_mutuas.aspx.resx"
+                    DependentUpon = "form_seleccion_listado_mutuas.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_seleccion_listado_prestaciones.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_seleccion_listado_prestaciones.aspx.vb"
+                    DependentUpon = "form_seleccion_listado_prestaciones.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_seleccion_listado_prestaciones.aspx.resx"
+                    DependentUpon = "form_seleccion_listado_prestaciones.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_seleccion_migracion.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_seleccion_migracion.aspx.vb"
+                    DependentUpon = "form_seleccion_migracion.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_seleccion_migracion.aspx.resx"
+                    DependentUpon = "form_seleccion_migracion.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_seleccion_plantilla.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_seleccion_plantilla.aspx.vb"
+                    DependentUpon = "form_seleccion_plantilla.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_seleccion_plantilla.aspx.resx"
+                    DependentUpon = "form_seleccion_plantilla.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_solicitar_cita.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_solicitar_cita.aspx.vb"
+                    DependentUpon = "form_solicitar_cita.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_solicitar_cita.aspx.resx"
+                    DependentUpon = "form_solicitar_cita.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_usuarios.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_usuarios.aspx.vb"
+                    DependentUpon = "form_usuarios.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_usuarios.aspx.resx"
+                    DependentUpon = "form_usuarios.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_usuarios_agendas.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_usuarios_agendas.aspx.vb"
+                    DependentUpon = "form_usuarios_agendas.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_usuarios_agendas.aspx.resx"
+                    DependentUpon = "form_usuarios_agendas.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_usuarios_mutuas.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_usuarios_mutuas.aspx.vb"
+                    DependentUpon = "form_usuarios_mutuas.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_usuarios_mutuas.aspx.resx"
+                    DependentUpon = "form_usuarios_mutuas.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\form_validacion_archivo.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\form_validacion_archivo.aspx.vb"
+                    DependentUpon = "form_validacion_archivo.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\form_validacion_archivo.aspx.resx"
+                    DependentUpon = "form_validacion_archivo.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\wait.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\WebForm1.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\WebForm1.aspx.vb"
+                    DependentUpon = "WebForm1.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\WebForm1.aspx.resx"
+                    DependentUpon = "WebForm1.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "formularios\WebForm2.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "formularios\WebForm2.aspx.vb"
+                    DependentUpon = "WebForm2.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "formularios\WebForm2.aspx.resx"
+                    DependentUpon = "WebForm2.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "galeria\form_galeria.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "galeria\form_galeria.aspx.vb"
+                    DependentUpon = "form_galeria.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "galeria\form_galeria.aspx.resx"
+                    DependentUpon = "form_galeria.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "galeria\form_visor.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "galeria\form_visor.aspx.vb"
+                    DependentUpon = "form_visor.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "galeria\form_visor.aspx.resx"
+                    DependentUpon = "form_visor.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "galeria\lupa_pequena.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\acrobat.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\admitida.GIF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\anulada.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\barra.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\centrado.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\cex.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\clinica.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\consulta_resultados.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\cursiva.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\derecha.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\excel.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\firma.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\foto.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\guiones_numeros.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\guiones_redondos.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\indica.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\izquierda.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\justificado.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\letra_subrayada.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\llave.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\logo.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\logo_portada.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\lupa.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\lupa_pequena.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\mini_mental.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\negrita.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\no_sangria.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\nota_episodio.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\nuevo.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\ojo.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\pendiente.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\placa.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\print.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\realizada.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\reprogramada.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\sangria.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\sem_rojo.GIF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\sem_verde.GIF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\subrayado.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\warning.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "imagenes\word.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "inc\cabecera.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "inc\cabecera.aspx.vb"
+                    DependentUpon = "cabecera.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "inc\cabecera.aspx.resx"
+                    DependentUpon = "cabecera.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "inc\inicio.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "inc\inicio.aspx.vb"
+                    DependentUpon = "inicio.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "inc\inicio.aspx.resx"
+                    DependentUpon = "inicio.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "inc\menu_lateral.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "inc\menu_lateral.aspx.vb"
+                    DependentUpon = "menu_lateral.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "inc\menu_lateral.aspx.resx"
+                    DependentUpon = "menu_lateral.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "inc\pie.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "inc\pie.aspx.vb"
+                    DependentUpon = "pie.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "inc\pie.aspx.resx"
+                    DependentUpon = "pie.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "informes\informe_basico.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "informes\informe_basico.aspx.vb"
+                    DependentUpon = "informe_basico.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "informes\informe_basico.aspx.resx"
+                    DependentUpon = "informe_basico.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "informes\informe_basico_curso_clinico.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "informes\informe_basico_curso_clinico.aspx.vb"
+                    DependentUpon = "informe_basico_curso_clinico.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "informes\informe_basico_curso_clinico.aspx.resx"
+                    DependentUpon = "informe_basico_curso_clinico.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "informes\informe_basico_display.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "informes\informe_basico_display.aspx.vb"
+                    DependentUpon = "informe_basico_display.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "informes\informe_basico_display.aspx.resx"
+                    DependentUpon = "informe_basico_display.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "informes\informe_basico_receta_display.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "informes\informe_basico_receta_display.aspx.vb"
+                    DependentUpon = "informe_basico_receta_display.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "informes\informe_basico_receta_display.aspx.resx"
+                    DependentUpon = "informe_basico_receta_display.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "informes\informe_botonera_hcis.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "informes\informe_botonera_hcis.aspx.vb"
+                    DependentUpon = "informe_botonera_hcis.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "informes\informe_botonera_hcis.aspx.resx"
+                    DependentUpon = "informe_botonera_hcis.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "informes\informe_consentimiento_display.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "informes\informe_consentimiento_display.aspx.vb"
+                    DependentUpon = "informe_consentimiento_display.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "informes\informe_consentimiento_display.aspx.resx"
+                    DependentUpon = "informe_consentimiento_display.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "informes\informe_curso_clinico.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "informes\informe_curso_clinico.aspx.vb"
+                    DependentUpon = "informe_curso_clinico.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "informes\informe_curso_clinico.aspx.resx"
+                    DependentUpon = "informe_curso_clinico.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "informes\informe_curso_clinico_grupo.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "informes\informe_curso_clinico_grupo.aspx.vb"
+                    DependentUpon = "informe_curso_clinico_grupo.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "informes\informe_curso_clinico_grupo.aspx.resx"
+                    DependentUpon = "informe_curso_clinico_grupo.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "informes\informe_curso_clinico_hcis.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "informes\informe_curso_clinico_hcis.aspx.vb"
+                    DependentUpon = "informe_curso_clinico_hcis.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "informes\informe_curso_clinico_hcis.aspx.resx"
+                    DependentUpon = "informe_curso_clinico_hcis.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "informes\informe_sin_informe.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "informes\informe_sin_informe.aspx.vb"
+                    DependentUpon = "informe_sin_informe.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "informes\informe_sin_informe.aspx.resx"
+                    DependentUpon = "informe_sin_informe.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "js\cima.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "js\rtf.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "pdf\CIMAWEB_adm.pdf"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "pdf\CIMAWEB_med.pdf"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "pdf\CIMAWEB_mida.pdf"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "reports\cr_hoja_citacion.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "reports\cr_hoja_citacion.aspx.vb"
+                    DependentUpon = "cr_hoja_citacion.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\cr_hoja_citacion.aspx.resx"
+                    DependentUpon = "cr_hoja_citacion.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\cr_mutuas.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "reports\cr_mutuas.aspx.vb"
+                    DependentUpon = "cr_mutuas.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\cr_mutuas.aspx.resx"
+                    DependentUpon = "cr_mutuas.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\cr_prestaciones.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "reports\cr_prestaciones.aspx.vb"
+                    DependentUpon = "cr_prestaciones.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\cr_prestaciones.aspx.resx"
+                    DependentUpon = "cr_prestaciones.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "user_objects\uo_barra_informes.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "user_objects\uo_barra_informes.ascx.vb"
+                    DependentUpon = "uo_barra_informes.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "user_objects\uo_barra_informes.ascx.resx"
+                    DependentUpon = "uo_barra_informes.ascx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "user_objects\uo_documentos_rel.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "user_objects\uo_documentos_rel.ascx.vb"
+                    DependentUpon = "uo_documentos_rel.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "user_objects\uo_documentos_rel.ascx.resx"
+                    DependentUpon = "uo_documentos_rel.ascx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "user_objects\uo_fecha.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "user_objects\uo_fecha.ascx.vb"
+                    DependentUpon = "uo_fecha.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "user_objects\uo_fecha.ascx.resx"
+                    DependentUpon = "uo_fecha.ascx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "user_objects\uo_fechas.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "user_objects\uo_fechas.ascx.vb"
+                    DependentUpon = "uo_fechas.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "user_objects\uo_fechas.ascx.resx"
+                    DependentUpon = "uo_fechas.ascx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "user_objects\uo_seguridad.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "user_objects\uo_seguridad.ascx.vb"
+                    DependentUpon = "uo_seguridad.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "user_objects\uo_seguridad.ascx.resx"
+                    DependentUpon = "uo_seguridad.ascx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Web References\CIMA_AD\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.vb"
+                />
+                <File
+                    RelPath = "Web References\CIMA_AD\Reference.vb"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\CIMA_AD\Service1.disco"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\CIMA_AD\Service1.wsdl"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\CIMA_AD\"
+                    WebReferenceUrl = "http://10.8.50.213/CIMA_Servicios/Service1.asmx"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\CIMAServeiIntegracio\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.vb"
+                />
+                <File
+                    RelPath = "Web References\CIMAServeiIntegracio\Reference.vb"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\CIMAServeiIntegracio\ServeiIntegracio.disco"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\CIMAServeiIntegracio\ServeiIntegracio.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\CIMAServeiIntegracio\ServeiIntegracio.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\CIMAServeiIntegracio\ServeiIntegracio0.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\CIMAServeiIntegracio\ServeiIntegracio1.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\CIMAServeiIntegracio\ServeiIntegracio2.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\CIMAServeiIntegracio\ServeiIntegracio3.xsd"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\CIMAServeiIntegracio\"
+                    WebReferenceUrl = "http://timor.cetir.org/CIMAServeiIntegracio/ServeiIntegracio.svc"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\dermas_ws\ds_baja_cita.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\dermas_ws\ds_cambio_estado.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\dermas_ws\ds_cita.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\dermas_ws\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.vb"
+                />
+                <File
+                    RelPath = "Web References\dermas_ws\Reference.vb"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\dermas_ws\Service1.disco"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\dermas_ws\Service1.wsdl"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\dermas_ws\"
+                    WebReferenceUrl = "http://www.dermas.cat/WS_DERMAS/Service1.asmx"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\idermalia_ws\ds_baja_cita.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\idermalia_ws\ds_cita.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\idermalia_ws\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.vb"
+                />
+                <File
+                    RelPath = "Web References\idermalia_ws\Reference.vb"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\idermalia_ws\Service1.disco"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\idermalia_ws\Service1.wsdl"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\idermalia_ws\"
+                    WebReferenceUrl = "http://www.idermalia.com/WS_IDERMALIA/Service1.asmx"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\SANITAS_WS\ds_citas.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\SANITAS_WS\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.vb"
+                />
+                <File
+                    RelPath = "Web References\SANITAS_WS\Reference.vb"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\SANITAS_WS\Service1.disco"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\SANITAS_WS\Service1.wsdl"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\SANITAS_WS\"
+                    WebReferenceUrl = "http://10.8.50.31/SANITAS_WS/Service1.asmx"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\srweblogic01\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.vb"
+                />
+                <File
+                    RelPath = "Web References\srweblogic01\Reference.vb"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\srweblogic01\WsSanitasService.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\srweblogic01\wssanitassms.xsd"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\srweblogic01\"
+                    WebReferenceUrl = "http://srweblogic01:8010/sanitas-sms-ws-webapp/ws-sanitas-sms?wsdl"
+                    UrlBehavior = "Static"
+                />
+                <Folder
+                    RelPath = "Web References\"
+                    WebReferences = "TRUE"
+                />
+            </Include>
+        </Files>
+        <StartupServices>
+            <Service ID = "{CF845C55-C321-4742-B673-E6212D061ED9}" />
+        </StartupServices>
+    </VisualBasic>
+</VisualStudioProject>
+
