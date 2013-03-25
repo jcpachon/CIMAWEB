@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_ver_datos" targetNamespace="http://tempuri.org/Dataset1.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/Dataset1.xsd" xmlns:mstns="http://tempuri.org/Dataset1.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_ver_datos" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="SP_CIMACEX_DATOS_MODIFICAR_USUARIO">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="perssur1" type="xs:string" minOccurs="0" />
+							<xs:element name="perssur2" type="xs:string" minOccurs="0" />
+							<xs:element name="persname" type="xs:string" minOccurs="0" />
+							<xs:element name="persbirtdate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="addrnumb" type="xs:string" minOccurs="0" />
+							<xs:element name="addrfloo" type="xs:string" minOccurs="0" />
+							<xs:element name="addrdoor" type="xs:string" minOccurs="0" />
+							<xs:element name="addrpostcode" type="xs:string" minOccurs="0" />
+							<xs:element name="addrtel1" type="xs:string" minOccurs="0" />
+							<xs:element name="addrtel2" type="xs:string" minOccurs="0" />
+							<xs:element name="addrnamestre" type="xs:string" minOccurs="0" />
+							<xs:element name="tsexdesc" type="xs:string" minOccurs="0" />
+							<xs:element name="persidencod1" type="xs:string" minOccurs="0" />
+							<xs:element name="idenpersdesc" type="xs:string" minOccurs="0" />
+							<xs:element name="addrmail" type="xs:string" minOccurs="0" />
+							<xs:element name="siafcode" type="xs:string" />
+							<xs:element name="troaname" type="xs:string" minOccurs="0" />
+							<xs:element name="apuscode" type="xs:string" />
+							<xs:element name="Column1" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="Column2" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="Column3" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

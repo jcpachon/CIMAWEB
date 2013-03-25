@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://timor.cetir.org/cimaserveiintegracio/serveiintegracio.svc?disco" filename="ServeiIntegracio.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://timor.cetir.org/cimaserveiintegracio/serveiintegracio.svc?wsdl" filename="ServeiIntegracio.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://timor.cetir.org/cimaserveiintegracio/serveiintegracio.svc?xsd=xsd3" filename="ServeiIntegracio.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://timor.cetir.org/cimaserveiintegracio/serveiintegracio.svc?xsd=xsd0" filename="ServeiIntegracio0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://timor.cetir.org/cimaserveiintegracio/serveiintegracio.svc?xsd=xsd1" filename="ServeiIntegracio1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://timor.cetir.org/cimaserveiintegracio/serveiintegracio.svc?xsd=xsd2" filename="ServeiIntegracio2.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://timor.cetir.org/cimaserveiintegracio/serveiintegracio.svc?xsd=xsd4" filename="ServeiIntegracio3.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

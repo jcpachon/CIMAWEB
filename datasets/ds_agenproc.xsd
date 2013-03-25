@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_agenproc" targetNamespace="http://tempuri.org/ds_agenproc.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_agenproc.xsd" xmlns:mstns="http://tempuri.org/ds_agenproc.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_agenproc" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="agenproc">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="agenproc_key" type="xs:int" />
+							<xs:element name="agentypecode" type="xs:string" />
+							<xs:element name="agenproccode" type="xs:string" />
+							<xs:element name="agenprocdesc" type="xs:string" />
+							<xs:element name="agenprocdura" type="xs:short" minOccurs="0" />
+							<xs:element name="agenprocinte" type="xs:short" minOccurs="0" />
+							<xs:element name="agenprocacti" type="xs:string" />
+							<xs:element name="txts_key" type="xs:int" minOccurs="0" />
+							<xs:element name="prod_key" type="xs:int" minOccurs="0" />
+							<xs:element name="agenprocweig" type="xs:int" minOccurs="0" />
+							<xs:element name="msrepl_tran_version" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_apporend" targetNamespace="http://tempuri.org/ds_apporend.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_apporend.xsd" xmlns:mstns="http://tempuri.org/ds_apporend.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_apporend" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="apporend">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="apporendcode" type="xs:string" />
+							<xs:element name="apporenddesc" type="xs:string" />
+							<xs:element name="apporendacti" type="xs:string" />
+							<xs:element name="apporendupda" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ds_apporendKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:apporend" />
+			<xs:field xpath="mstns:apporendcode" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

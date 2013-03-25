@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_carga_cetir" targetNamespace="http://tempuri.org/ds_carga_cetir.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_carga_cetir.xsd" xmlns:mstns="http://tempuri.org/ds_carga_cetir.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_carga_cetir" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="SP_CIMACEX_CARGA_CETIR">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="hora_ini" type="xs:dateTime" />
+							<xs:element name="hora_fin" type="xs:dateTime" />
+							<xs:element name="diardate" type="xs:dateTime" />
+							<xs:element name="pers_key" type="xs:int" />
+							<xs:element name="persname" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="perssur1" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="perssur2" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="fecha_nacimiento" type="xs:dateTime" />
+							<xs:element name="dni" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="tsexcode" type="xs:string" />
+							<xs:element name="poblacion" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="provincia" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="pais" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="cp" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="direccion" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="email" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="episcode" type="xs:string" />
+							<xs:element name="tel1" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="tel2" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="ID_Prova" type="xs:string" minOccurs="0" />
+							<xs:element name="garante" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_plantillas" targetNamespace="http://tempuri.org/ds_plantillas.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_plantillas.xsd" xmlns:mstns="http://tempuri.org/ds_plantillas.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_plantillas" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="cima_plantillas">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="id_plantilla" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="version" type="xs:int" />
+							<xs:element name="descripcion" type="xs:string" minOccurs="0" />
+							<xs:element name="acceso_libre" type="xs:string" minOccurs="0" />
+							<xs:element name="informacion" type="xs:string" minOccurs="0" />
+							<xs:element name="id_propietario" type="xs:string" minOccurs="0" />
+							<xs:element name="fecha_creacion" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="permiso_acceso" type="xs:int" minOccurs="0" />
+							<xs:element name="consentimiento" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ds_plantillasKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:cima_plantillas" />
+			<xs:field xpath="mstns:id_plantilla" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

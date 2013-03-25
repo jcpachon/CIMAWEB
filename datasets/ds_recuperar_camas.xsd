@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_recuperar_camas" targetNamespace="http://tempuri.org/ds_recuperar_camas.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_recuperar_camas.xsd"
+	xmlns:mstns="http://tempuri.org/ds_recuperar_camas.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_recuperar_camas" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="SP_CIMACEX_RECUPERA_CAMAS">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="num_cama" type="xs:string" minOccurs="0" />
+							<xs:element name="primer_apellido" type="xs:string" minOccurs="0" />
+							<xs:element name="segundo_apellido" type="xs:string" minOccurs="0" />
+							<xs:element name="nombre" type="xs:string" minOccurs="0" />
+							<xs:element name="NHC" type="xs:string" minOccurs="0" />
+							<xs:element name="episodio" type="xs:string" minOccurs="0" />
+							<xs:element name="fecha_entrada" type="xs:string" minOccurs="0" />
+							<xs:element name="hora_entrada" type="xs:string" minOccurs="0" />
+							<xs:element name="MUTUA" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

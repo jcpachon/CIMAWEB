@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:mstns="http://tempuri.org/ds_cita.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns="http://tempuri.org/ds_cita.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/ds_cita.xsd" id="ds_cita" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" name="ds_cita">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="cita">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="id_centro" type="xs:int" />
+              <xs:element minOccurs="0" name="agencode" type="xs:string" />
+              <xs:element minOccurs="0" name="id_prestacion" type="xs:int" />
+              <xs:element minOccurs="0" name="dia" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="hora_ini" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="hora_fin" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="id_garante" type="xs:int" />
+              <xs:element minOccurs="0" name="pers_key" type="xs:int" />
+              <xs:element minOccurs="0" name="id_agen_franja" type="xs:int" />
+              <xs:element minOccurs="0" name="epis_key" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="pers">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="pers_key" type="xs:int" />
+              <xs:element minOccurs="0" name="perssur1" type="xs:string" />
+              <xs:element minOccurs="0" name="perssur2" type="xs:string" />
+              <xs:element minOccurs="0" name="persname" type="xs:string" />
+              <xs:element minOccurs="0" name="tsexcode" type="xs:string" />
+              <xs:element minOccurs="0" name="persfullname" type="xs:string" />
+              <xs:element minOccurs="0" name="idenperscod1" type="xs:string" />
+              <xs:element minOccurs="0" name="persidencod1" type="xs:string" />
+              <xs:element minOccurs="0" name="movil" type="xs:string" />
+              <xs:element minOccurs="0" name="fecha_nacimiento" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="ds_citaKey1">
+      <xs:selector xpath=".//mstns:pers" />
+      <xs:field xpath="mstns:pers_key" />
+    </xs:unique>
+    <xs:keyref name="perscita" refer="mstns:ds_citaKey1">
+      <xs:selector xpath=".//mstns:cita" />
+      <xs:field xpath="mstns:pers_key" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

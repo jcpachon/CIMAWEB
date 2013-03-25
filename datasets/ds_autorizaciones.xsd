@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_autorizaciones" targetNamespace="http://tempuri.org/ds_autorizaciones.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_autorizaciones.xsd"
+	xmlns:mstns="http://tempuri.org/ds_autorizaciones.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_autorizaciones" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="cima_prestaciones_autorizacion">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="hpro_key" type="xs:int" />
+							<xs:element name="id_agenda_garante" type="xs:int" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ds_autorizacionesKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:cima_prestaciones_autorizacion" />
+			<xs:field xpath="mstns:hpro_key" />
+			<xs:field xpath="mstns:id_agenda_garante" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

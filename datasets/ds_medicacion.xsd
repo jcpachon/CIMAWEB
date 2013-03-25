@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_medicacion" targetNamespace="http://tempuri.org/ds_medicacion.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_medicacion.xsd" xmlns:mstns="http://tempuri.org/ds_medicacion.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_medicacion" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="cima_medicacion">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Medicación" type="xs:string" minOccurs="0" />
+							<xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Duración" type="xs:string" minOccurs="0" />
+							<xs:element name="Episodio" type="xs:string" minOccurs="0" />
+							<xs:element name="Posología" type="xs:string" minOccurs="0" />
+							<xs:element name="Observaciones" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

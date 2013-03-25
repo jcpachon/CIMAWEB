@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CGM.Services.Integracio" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CGM.Services.Integracio" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="FranjaHoraria">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="QUALSEVOL" />
+      <xs:enumeration value="MATI" />
+      <xs:enumeration value="MIGDIA" />
+      <xs:enumeration value="TARDA" />
+      <xs:enumeration value="NIT" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="FranjaHoraria" nillable="true" type="tns:FranjaHoraria" />
+</xs:schema>

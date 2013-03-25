@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_firm_garantes" targetNamespace="http://tempuri.org/ds_firm_garantes.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_firm_garantes.xsd"
+	xmlns:mstns="http://tempuri.org/ds_firm_garantes.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_firm_garantes" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="firm">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="firm_key" type="xs:int" />
+							<xs:element name="addrcodemain" type="xs:int" minOccurs="0" />
+							<xs:element name="addrcodedeli" type="xs:int" minOccurs="0" />
+							<xs:element name="addrcodeinvo" type="xs:int" minOccurs="0" />
+							<xs:element name="ttaxgfircode" type="xs:string" />
+							<xs:element name="paymdocucode" type="xs:string" />
+							<xs:element name="firmclascode" type="xs:string" minOccurs="0" />
+							<xs:element name="currcode" type="xs:string" />
+							<xs:element name="langcode" type="xs:string" minOccurs="0" />
+							<xs:element name="addrcodepaym" type="xs:int" minOccurs="0" />
+							<xs:element name="plancode" type="xs:string" />
+							<xs:element name="payccode" type="xs:string" />
+							<xs:element name="idenfirmcode" type="xs:string" minOccurs="0" />
+							<xs:element name="firmcode" type="xs:string" />
+							<xs:element name="firmname" type="xs:string" />
+							<xs:element name="firmnamecomm" type="xs:string" minOccurs="0" />
+							<xs:element name="firmidencode" type="xs:string" minOccurs="0" />
+							<xs:element name="firmdateacti" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="firmrema" type="xs:string" minOccurs="0" />
+							<xs:element name="firmfilename" type="xs:string" minOccurs="0" />
+							<xs:element name="firmacti" type="xs:string" />
+							<xs:element name="plancodeterr" type="xs:string" minOccurs="0" />
+							<xs:element name="tfircode" type="xs:string" />
+							<xs:element name="firmea13" type="xs:string" minOccurs="0" />
+							<xs:element name="firm_abc" type="xs:string" minOccurs="0" />
+							<xs:element name="invccode" type="xs:string" />
+							<xs:element name="firmguar" type="xs:string" />
+							<xs:element name="firmnameshor" type="xs:string" minOccurs="0" />
+							<xs:element name="funccodebrne" type="xs:int" minOccurs="0" />
+							<xs:element name="funccodeprpr" type="xs:int" minOccurs="0" />
+							<xs:element name="firm_keyfath" type="xs:int" minOccurs="0" />
+							<xs:element name="funccodebrnedeli" type="xs:int" minOccurs="0" />
+							<xs:element name="funccodeprprdeli" type="xs:int" minOccurs="0" />
+							<xs:element name="funccodebrneorde" type="xs:int" minOccurs="0" />
+							<xs:element name="funccodeprprorde" type="xs:int" minOccurs="0" />
+							<xs:element name="buni_key" type="xs:int" minOccurs="0" />
+							<xs:element name="codetmplcode" type="xs:string" minOccurs="0" />
+							<xs:element name="funccodeacce" type="xs:int" minOccurs="0" />
+							<xs:element name="firmtrantime" type="xs:short" minOccurs="0" />
+							<xs:element name="firmpartserv" type="xs:string" />
+							<xs:element name="firmminiperc" type="xs:decimal" minOccurs="0" />
+							<xs:element name="firmrealqualctrl" type="xs:string" />
+							<xs:element name="firmleve" type="xs:short" minOccurs="0" />
+							<xs:element name="firmorde" type="xs:short" minOccurs="0" />
+							<xs:element name="firmdelidays" type="xs:short" minOccurs="0" />
+							<xs:element name="txts_key" type="xs:int" minOccurs="0" />
+							<xs:element name="firmdatedrop" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="docu_key" type="xs:int" minOccurs="0" />
+							<xs:element name="plancodeter2" type="xs:string" minOccurs="0" />
+							<xs:element name="addrcodezone" type="xs:int" minOccurs="0" />
+							<xs:element name="tfircod2" type="xs:string" minOccurs="0" />
+							<xs:element name="plancodefir2" type="xs:string" minOccurs="0" />
+							<xs:element name="firminvonumb" type="xs:short" minOccurs="0" />
+							<xs:element name="firm_keytabl" type="xs:int" minOccurs="0" />
+							<xs:element name="tablcode" type="xs:string" minOccurs="0" />
+							<xs:element name="trac_key" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ds_firm_garantesKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:firm" />
+			<xs:field xpath="mstns:firm_key" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

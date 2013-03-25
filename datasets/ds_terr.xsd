@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_terr" targetNamespace="http://tempuri.org/ds_terr.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_terr.xsd" xmlns:mstns="http://tempuri.org/ds_terr.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_terr" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="terr">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="terr_key" type="xs:int" minOccurs="0" />
+							<xs:element name="terr_keyfath" type="xs:int" minOccurs="0" />
+							<xs:element name="terrleve" type="xs:int" minOccurs="0" />
+							<xs:element name="terrdesc" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:key name="ds_terrKey1">
+			<xs:selector xpath=".//mstns:terr" />
+			<xs:field xpath="mstns:terr_key" />
+		</xs:key>
+	</xs:element>
+</xs:schema>

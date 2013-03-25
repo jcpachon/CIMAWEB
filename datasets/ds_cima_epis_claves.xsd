@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_cima_epis_claves" targetNamespace="http://tempuri.org/ds_cima_epis_claves.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_cima_epis_claves.xsd"
+	xmlns:mstns="http://tempuri.org/ds_cima_epis_claves.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_cima_epis_claves" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="cima_epis_claves">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="id_epis_clave" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="epis_key" type="xs:int" minOccurs="0" />
+							<xs:element name="episcode" type="xs:string" minOccurs="0" />
+							<xs:element name="clave" type="xs:string" minOccurs="0" />
+							<xs:element name="fecha" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="descargado" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ds_cima_epis_clavesKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:cima_epis_claves" />
+			<xs:field xpath="mstns:id_epis_clave" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

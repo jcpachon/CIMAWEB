@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_csta" targetNamespace="http://tempuri.org/ds_csta.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_csta.xsd" xmlns:mstns="http://tempuri.org/ds_csta.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_csta" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="csta">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="csta_key" type="xs:int" />
+							<xs:element name="cent_key" type="xs:int" />
+							<xs:element name="serv_key" type="xs:int" />
+							<xs:element name="tactcode" type="xs:string" />
+							<xs:element name="prod_key" type="xs:int" minOccurs="0" />
+							<xs:element name="cstadescshor" type="xs:string" minOccurs="0" />
+							<xs:element name="cstadesclong" type="xs:string" minOccurs="0" />
+							<xs:element name="cstacmbd" type="xs:string" minOccurs="0" />
+							<xs:element name="cstaacti" type="xs:string" />
+							<xs:element name="cstacode_crc" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ds_cstaKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:csta" />
+			<xs:field xpath="mstns:csta_key" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

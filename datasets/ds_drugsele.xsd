@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_drugsele" targetNamespace="http://tempuri.org/ds_drugsele.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_drugsele.xsd" xmlns:mstns="http://tempuri.org/ds_drugsele.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_drugsele" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="SP_CIMACEX_MEDICACION">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="drugselecode_key" type="xs:int" />
+							<xs:element name="drugseledesc" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

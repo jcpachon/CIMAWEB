@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_hpro" targetNamespace="http://tempuri.org/ds_hpro.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_hpro.xsd" xmlns:mstns="http://tempuri.org/ds_hpro.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_hpro" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="hpro">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="hpro_key" type="xs:int" />
+							<xs:element name="hpro_keyfath" type="xs:int" minOccurs="0" />
+							<xs:element name="hprocode" type="xs:string" />
+							<xs:element name="hprodescshor" type="xs:string" />
+							<xs:element name="hprodesclong" type="xs:string" minOccurs="0" />
+							<xs:element name="hprodura" type="xs:short" minOccurs="0" />
+							<xs:element name="hproleve" type="xs:short" />
+							<xs:element name="hproacti" type="xs:string" />
+							<xs:element name="hproupda" type="xs:string" />
+							<xs:element name="plancode" type="xs:string" />
+							<xs:element name="txts_key" type="xs:int" minOccurs="0" />
+							<xs:element name="hproorde" type="xs:short" minOccurs="0" />
+							<xs:element name="hpro_uvr" type="xs:decimal" minOccurs="0" />
+							<xs:element name="hprogrouclos" type="xs:string" minOccurs="0" />
+							<xs:element name="hprocodenorm" type="xs:string" minOccurs="0" />
+							<xs:element name="hprotypecode" type="xs:string" minOccurs="0" />
+							<xs:element name="hprovaliperi" type="xs:int" minOccurs="0" />
+							<xs:element name="hprocode_crc" type="xs:string" minOccurs="0" />
+							<xs:element name="bookproc_key" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ds_hproKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:hpro" />
+			<xs:field xpath="mstns:hpro_key" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

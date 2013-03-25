@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_covegrou" targetNamespace="http://tempuri.org/ds_covegrou.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_covegrou.xsd" xmlns:mstns="http://tempuri.org/ds_covegrou.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_covegrou" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="covegrou">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="covegrou_key" type="xs:int" />
+							<xs:element name="covegroucode" type="xs:string" />
+							<xs:element name="buni_key" type="xs:int" />
+							<xs:element name="tpolcode" type="xs:string" minOccurs="0" />
+							<xs:element name="covegroudescshor" type="xs:string" />
+							<xs:element name="covegroudesclong" type="xs:string" minOccurs="0" />
+							<xs:element name="covegrouacti" type="xs:string" />
+							<xs:element name="covegrouflagagre" type="xs:string" />
+							<xs:element name="covegroutimedisc" type="xs:int" minOccurs="0" />
+							<xs:element name="covegroucodepres" type="xs:string" minOccurs="0" />
+							<xs:element name="addrcode" type="xs:int" minOccurs="0" />
+							<xs:element name="covegrouvalo" type="xs:string" minOccurs="0" />
+							<xs:element name="covegroupriv" type="xs:string" minOccurs="0" />
+							<xs:element name="covegrouemepinpa" type="xs:string" />
+							<xs:element name="covegrouteam" type="xs:string" />
+							<xs:element name="covegroutypeinvs" type="xs:string" minOccurs="0" />
+							<xs:element name="covegrounumbrepo" type="xs:int" minOccurs="0" />
+							<xs:element name="covegrouvaloinvs" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ds_covegrouKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:covegrou" />
+			<xs:field xpath="mstns:covegrou_key" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

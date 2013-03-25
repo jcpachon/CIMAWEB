@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_agendas" targetNamespace="http://tempuri.org/ds_agendas.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_agendas.xsd" xmlns:mstns="http://tempuri.org/ds_agendas.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_agendas" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="cima_usuarios_agen">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="id_usuario" type="xs:string" />
+							<xs:element name="agencode" type="xs:string" />
+							<xs:element name="agenname" type="xs:string" minOccurs="0" nillable="true" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ds_agendasKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:cima_usuarios_agen" />
+			<xs:field xpath="mstns:id_usuario" />
+			<xs:field xpath="mstns:agencode" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_datos_captura_prestaciones_agen" targetNamespace="http://tempuri.org/ds_datos_captura_prestaciones_agen.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_datos_captura_prestaciones_agen.xsd"
+	xmlns:mstns="http://tempuri.org/ds_datos_captura_prestaciones_agen.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_datos_captura_prestaciones_agen" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="SP_CIMACEX_PRESTACIONES_AGEN">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="proctita_key" type="xs:int" />
+							<xs:element name="hpro_key" type="xs:int" minOccurs="0" />
+							<xs:element name="agencode" type="xs:string" />
+							<xs:element name="btimetabcode" type="xs:short" />
+							<xs:element name="agenname" type="xs:string" />
+							<xs:element name="btimetabdesc" type="xs:string" />
+							<xs:element name="hprodesclong" type="xs:string" minOccurs="0" />
+							<xs:element name="proctitadura" type="xs:short" minOccurs="0" />
+							<xs:element name="proctitaacti" type="xs:string" />
+							<xs:element name="proctitadefa" type="xs:string" minOccurs="0" />
+							<xs:element name="proctitavalu" type="xs:string" />
+							<xs:element name="proctitanumbpres" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

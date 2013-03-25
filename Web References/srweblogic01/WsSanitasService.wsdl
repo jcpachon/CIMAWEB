@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://ws.sms.sanitas.es/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://ws.sms.sanitas.es/" name="WsSanitasService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema>
+      <s:import schemaLocation="http://srweblogic01:8010/sanitas-sms-ws-webapp/ws-sanitas-sms?xsd=1" namespace="http://ws.sms.sanitas.es/" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="enviaSencillo">
+    <wsdl:part name="parameters" element="tns:enviaSencillo" />
+  </wsdl:message>
+  <wsdl:message name="enviaSencilloResponse">
+    <wsdl:part name="parameters" element="tns:enviaSencilloResponse" />
+  </wsdl:message>
+  <wsdl:message name="enviaConTexto">
+    <wsdl:part name="parameters" element="tns:enviaConTexto" />
+  </wsdl:message>
+  <wsdl:message name="enviaConTextoResponse">
+    <wsdl:part name="parameters" element="tns:enviaConTextoResponse" />
+  </wsdl:message>
+  <wsdl:message name="enviaTextoProgramacion">
+    <wsdl:part name="parameters" element="tns:enviaTextoProgramacion" />
+  </wsdl:message>
+  <wsdl:message name="enviaTextoProgramacionResponse">
+    <wsdl:part name="parameters" element="tns:enviaTextoProgramacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="enviaConParams">
+    <wsdl:part name="parameters" element="tns:enviaConParams" />
+  </wsdl:message>
+  <wsdl:message name="enviaConParamsResponse">
+    <wsdl:part name="parameters" element="tns:enviaConParamsResponse" />
+  </wsdl:message>
+  <wsdl:message name="enviaAdjuntos">
+    <wsdl:part name="parameters" element="tns:enviaAdjuntos" />
+  </wsdl:message>
+  <wsdl:message name="enviaAdjuntosResponse">
+    <wsdl:part name="parameters" element="tns:enviaAdjuntosResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WsSanitas">
+    <wsdl:operation name="enviaSencillo">
+      <wsdl:input message="tns:enviaSencillo" />
+      <wsdl:output message="tns:enviaSencilloResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="enviaConTexto">
+      <wsdl:input message="tns:enviaConTexto" />
+      <wsdl:output message="tns:enviaConTextoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="enviaTextoProgramacion">
+      <wsdl:input message="tns:enviaTextoProgramacion" />
+      <wsdl:output message="tns:enviaTextoProgramacionResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="enviaConParams">
+      <wsdl:input message="tns:enviaConParams" />
+      <wsdl:output message="tns:enviaConParamsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="enviaAdjuntos">
+      <wsdl:input message="tns:enviaAdjuntos" />
+      <wsdl:output message="tns:enviaAdjuntosResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WsSanitasPortBinding" type="tns:WsSanitas">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <wsdl:operation name="enviaSencillo">
+      <soap:operation soapAction="" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enviaConTexto">
+      <soap:operation soapAction="" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enviaTextoProgramacion">
+      <soap:operation soapAction="" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enviaConParams">
+      <soap:operation soapAction="" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enviaAdjuntos">
+      <soap:operation soapAction="" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WsSanitasService">
+    <wsdl:port name="WsSanitasPort" binding="tns:WsSanitasPortBinding">
+      <soap:address location="http://srweblogic01:8010/sanitas-sms-ws-webapp/ws-sanitas-sms" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

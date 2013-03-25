@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_cima_epis_informes" targetNamespace="http://tempuri.org/ds_cima_epis_informes.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_cima_epis_informes.xsd"
+	xmlns:mstns="http://tempuri.org/ds_cima_epis_informes.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_cima_epis_informes" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="cima_epis_informes">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="episcode" type="xs:string" />
+							<xs:element name="numero" type="xs:int" />
+							<xs:element name="id_usuario" type="xs:string" minOccurs="0" />
+							<xs:element name="informe" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="fecha" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="nombre" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ds_cima_epis_informesKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:cima_epis_informes" />
+			<xs:field xpath="mstns:episcode" />
+			<xs:field xpath="mstns:numero" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

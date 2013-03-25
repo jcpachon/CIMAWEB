@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_hoja_citacion" targetNamespace="http://tempuri.org/ds_hoja_citacion.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_hoja_citacion.xsd"
+	xmlns:mstns="http://tempuri.org/ds_hoja_citacion.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_hoja_citacion" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="SP_CIMACEX_HOJA_CITACION">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="episcode" type="xs:string" />
+							<xs:element name="paciente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="NHC" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="fecha_nacimiento" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="garante" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="poliza" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="fecha" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="hora" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="hprocode" type="xs:string" />
+							<xs:element name="hprodesclong" type="xs:string" minOccurs="0" />
+							<xs:element name="servicio" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="edad" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="dni" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

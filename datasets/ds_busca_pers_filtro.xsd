@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_busca_pers_filtro" targetNamespace="http://tempuri.org/ds_busca_pers_filtro.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_busca_pers_filtro.xsd"
+	xmlns:mstns="http://tempuri.org/ds_busca_pers_filtro.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_busca_pers_filtro" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="pers_filtro">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="pers_key" type="xs:int" minOccurs="0" />
+							<xs:element name="persfullname" type="xs:string" minOccurs="0" />
+							<xs:element name="persidencod1" type="xs:string" minOccurs="0" />
+							<xs:element name="persidencod2" type="xs:string" minOccurs="0" />
+							<xs:element name="nhc" type="xs:string" minOccurs="0" />
+							<xs:element name="episcode" type="xs:string" minOccurs="0" />
+							<xs:element name="dia" type="xs:string" minOccurs="0" />
+							<xs:element name="hora" type="xs:string" minOccurs="0" />
+							<xs:element name="agenname" type="xs:string" minOccurs="0" />
+							<xs:element name="agencode" type="xs:string" minOccurs="0" />
+							<xs:element name="tactcode" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

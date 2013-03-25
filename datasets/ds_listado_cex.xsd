@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_listado_cex" targetNamespace="http://tempuri.org/ds_listado_cex.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_listado_cex.xsd" xmlns:mstns="http://tempuri.org/ds_listado_cex.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_listado_cex" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="SP_CIMACEX_LISTADO_CEX">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="episcode" type="xs:string" />
+							<xs:element name="pati_hfn" type="xs:int" minOccurs="0" />
+							<xs:element name="hora_cita" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="persfullname" type="xs:string" minOccurs="0" />
+							<xs:element name="fecha_nacimiento" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="agenname" type="xs:string" />
+							<xs:element name="agenprocdesc" type="xs:string" minOccurs="0" />
+							<xs:element name="appostatdesc" type="xs:string" />
+							<xs:element name="apporenddesc" type="xs:string" minOccurs="0" />
+							<xs:element name="agenprocdesc1" type="xs:string" minOccurs="0" />
+							<xs:element name="bookhend" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="appostatcode" type="xs:string" />
+							<xs:element name="appoharr" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="diardate" type="xs:string" minOccurs="0" />
+							<xs:element name="bookhini" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

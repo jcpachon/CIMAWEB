@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_btimetab" targetNamespace="http://tempuri.org/ds_btimetab.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_btimetab.xsd" xmlns:mstns="http://tempuri.org/ds_btimetab.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_btimetab" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="btimetab">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="agencode" type="xs:string" />
+							<xs:element name="btimetabcode" type="xs:short" />
+							<xs:element name="btimetabdesc" type="xs:string" />
+							<xs:element name="btimetabdateinit" type="xs:dateTime" />
+							<xs:element name="btimetabdate_end" type="xs:dateTime" />
+							<xs:element name="btimetabdaysweek" type="xs:string" />
+							<xs:element name="btimetabhour_end" type="xs:dateTime" />
+							<xs:element name="btimetabhourinit" type="xs:dateTime" />
+							<xs:element name="btimetab_maxpers" type="xs:short" minOccurs="0" />
+							<xs:element name="btimetabamou" type="xs:string" />
+							<xs:element name="btimetabappointe" type="xs:short" />
+							<xs:element name="btimetabappoholi" type="xs:string" minOccurs="0" />
+							<xs:element name="btimetabgran" type="xs:int" minOccurs="0" />
+							<xs:element name="spdi_key" type="xs:int" minOccurs="0" />
+							<xs:element name="btimetabacti" type="xs:string" />
+							<xs:element name="btimetabupda" type="xs:string" />
+							<xs:element name="btimetabdefa" type="xs:string" minOccurs="0" />
+							<xs:element name="btimetabwarn" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ds_btimetabKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:btimetab" />
+			<xs:field xpath="mstns:agencode" />
+			<xs:field xpath="mstns:btimetabcode" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

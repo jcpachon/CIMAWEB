@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:i1="http://tempuri.org/ds_baja_cita.xsd" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:i2="http://tempuri.org/ds_cambio_estado.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:i0="http://tempuri.org/ds_cita.xsd" xmlns:tns="http://tempuri.org/WS_DERMAS/Service1" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://tempuri.org/WS_DERMAS/Service1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://tempuri.org/ds_cita.xsd" location="http://www.dermas.net/WS_DERMAS/Service1.asmx?schema=ds_cita" />
+  <wsdl:import namespace="http://tempuri.org/ds_baja_cita.xsd" location="http://www.dermas.net/WS_DERMAS/Service1.asmx?schema=ds_baja_cita" />
+  <wsdl:import namespace="http://tempuri.org/ds_cambio_estado.xsd" location="http://www.dermas.net/WS_DERMAS/Service1.asmx?schema=ds_cambio_estado" />
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/WS_DERMAS/Service1">
+      <s:import namespace="http://tempuri.org/ds_cita.xsd" />
+      <s:import namespace="http://tempuri.org/ds_baja_cita.xsd" />
+      <s:import namespace="http://tempuri.org/ds_cambio_estado.xsd" />
+      <s:element name="AltaCita">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ds_cita">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/ds_cita.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AltaCitaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AltaCitaResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BajaCita">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ds_baja_cita">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/ds_baja_cita.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BajaCitaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BajaCitaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CambioEstado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ds_cambio_estado">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/ds_cambio_estado.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CambioEstadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CambioEstadoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AltaCitaSoapIn">
+    <wsdl:part name="parameters" element="tns:AltaCita" />
+  </wsdl:message>
+  <wsdl:message name="AltaCitaSoapOut">
+    <wsdl:part name="parameters" element="tns:AltaCitaResponse" />
+  </wsdl:message>
+  <wsdl:message name="BajaCitaSoapIn">
+    <wsdl:part name="parameters" element="tns:BajaCita" />
+  </wsdl:message>
+  <wsdl:message name="BajaCitaSoapOut">
+    <wsdl:part name="parameters" element="tns:BajaCitaResponse" />
+  </wsdl:message>
+  <wsdl:message name="CambioEstadoSoapIn">
+    <wsdl:part name="parameters" element="tns:CambioEstado" />
+  </wsdl:message>
+  <wsdl:message name="CambioEstadoSoapOut">
+    <wsdl:part name="parameters" element="tns:CambioEstadoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Service1Soap">
+    <wsdl:operation name="AltaCita">
+      <wsdl:input message="tns:AltaCitaSoapIn" />
+      <wsdl:output message="tns:AltaCitaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BajaCita">
+      <wsdl:input message="tns:BajaCitaSoapIn" />
+      <wsdl:output message="tns:BajaCitaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CambioEstado">
+      <wsdl:input message="tns:CambioEstadoSoapIn" />
+      <wsdl:output message="tns:CambioEstadoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="Service1HttpGet" />
+  <wsdl:portType name="Service1HttpPost" />
+  <wsdl:binding name="Service1Soap" type="tns:Service1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <wsdl:operation name="AltaCita">
+      <soap:operation soapAction="http://tempuri.org/WS_DERMAS/Service1/AltaCita" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BajaCita">
+      <soap:operation soapAction="http://tempuri.org/WS_DERMAS/Service1/BajaCita" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CambioEstado">
+      <soap:operation soapAction="http://tempuri.org/WS_DERMAS/Service1/CambioEstado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Service1HttpGet" type="tns:Service1HttpGet">
+    <http:binding verb="GET" />
+  </wsdl:binding>
+  <wsdl:binding name="Service1HttpPost" type="tns:Service1HttpPost">
+    <http:binding verb="POST" />
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="Service1Soap" binding="tns:Service1Soap">
+      <soap:address location="http://www.dermas.net/WS_DERMAS/Service1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Service1HttpGet" binding="tns:Service1HttpGet">
+      <http:address location="http://www.dermas.net/WS_DERMAS/Service1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Service1HttpPost" binding="tns:Service1HttpPost">
+      <http:address location="http://www.dermas.net/WS_DERMAS/Service1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

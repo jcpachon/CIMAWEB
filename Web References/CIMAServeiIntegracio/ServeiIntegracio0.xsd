@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://timor.cetir.org/CIMAServeiIntegracio/ServeiIntegracio.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Cgm.Integracions.CIMA.Business" />
+  <xs:import schemaLocation="http://timor.cetir.org/CIMAServeiIntegracio/ServeiIntegracio.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://timor.cetir.org/CIMAServeiIntegracio/ServeiIntegracio.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CGM.Services.Integracio" />
+  <xs:import schemaLocation="http://timor.cetir.org/CIMAServeiIntegracio/ServeiIntegracio.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="BegginTransaction">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BegginTransactionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Cgm.Integracions.CIMA.Business" minOccurs="0" name="BegginTransactionResult" nillable="true" type="q1:Transaccio" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RollbackTransaction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="ID_Transaccio" type="q2:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RollbackTransactionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Cgm.Integracions.CIMA.Business" minOccurs="0" name="RollbackTransactionResult" nillable="true" type="q3:Transaccio" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CommitTransaccio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="ID_Transaccio" type="q4:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CommitTransaccioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Cgm.Integracions.CIMA.Business" minOccurs="0" name="CommitTransaccioResult" nillable="true" type="q5:Transaccio" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHoresLliures">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="ID_Transaccio" type="q6:guid" />
+        <xs:element minOccurs="0" name="ID_Institucio_Pagament" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID_Prova" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Desde" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Fins" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Maxim_Hores" type="xs:int" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/CGM.Services.Integracio" minOccurs="0" name="Franja_Horaria" type="q7:FranjaHoraria" />
+        <xs:element minOccurs="0" name="Hora_inici" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Hora_Fi" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="ID_Centre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Urgent" type="xs:boolean" />
+        <xs:element minOccurs="0" name="Especial" type="xs:boolean" />
+        <xs:element minOccurs="0" name="Anestesia" type="xs:boolean" />
+        <xs:element minOccurs="0" name="Ambulancia" type="xs:boolean" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Cgm.Integracions.CIMA.Business" minOccurs="0" name="Mantenir_Hores_Reservades" nillable="true" type="q8:ArrayOfHoraReservada" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHoresLliuresResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Cgm.Integracions.CIMA.Business" minOccurs="0" name="GetHoresLliuresResult" nillable="true" type="q9:ArrayOfHoraReservada" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmarHoraPacient">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="ID_Transaccio" type="q10:guid" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Cgm.Integracions.CIMA.Business" minOccurs="0" name="Dades_Pacient" nillable="true" type="q11:Pacient" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Cgm.Integracions.CIMA.Business" minOccurs="0" name="Hora_Reservada" nillable="true" type="q12:HoraReservada" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmarHoraPacientResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Cgm.Integracions.CIMA.Business" minOccurs="0" name="ConfirmarHoraPacientResult" nillable="true" type="q13:Cita" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForzarHoraPacient">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="ID_Transaccio" type="q14:guid" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/Cgm.Integracions.CIMA.Business" minOccurs="0" name="Dades_Pacient" nillable="true" type="q15:Pacient" />
+        <xs:element minOccurs="0" name="ID_Institucio_Pagament" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID_Prova" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID_Centre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Data_Inici_Realitzacio" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Data_Final_Realitzacio" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Urgent" type="xs:boolean" />
+        <xs:element minOccurs="0" name="Anestesia" type="xs:boolean" />
+        <xs:element minOccurs="0" name="Ambulancia" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForzarHoraPacientResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Cgm.Integracions.CIMA.Business" minOccurs="0" name="ForzarHoraPacientResult" nillable="true" type="q16:Cita" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AssociarCitaCGMEpisodiExtern">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="ID_Transaccio" type="q17:guid" />
+        <xs:element minOccurs="0" name="ID_Cita_CGM" type="xs:int" />
+        <xs:element minOccurs="0" name="ID_Episodi" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AssociarCitaCGMEpisodiExternResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Cgm.Integracions.CIMA.Business" minOccurs="0" name="AssociarCitaCGMEpisodiExternResult" nillable="true" type="q18:Cita" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RecepcioDePacient">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="ID_Transaccio" type="q19:guid" />
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/Cgm.Integracions.CIMA.Business" minOccurs="0" name="Dades_Pacient" nillable="true" type="q20:Pacient" />
+        <xs:element minOccurs="0" name="ID_Episodi" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID_Cita_CGM" type="xs:int" />
+        <xs:element minOccurs="0" name="ID_Prova" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID_Centre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Data_Realitzacio" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Orientacio_diagnostica" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RecepcioDePacientResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="RecepcioDePacientResult" nillable="true" type="q21:ArrayOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AnularDadesEpisodi">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="ID_Transaccio" type="q22:guid" />
+        <xs:element minOccurs="0" name="ID_Pacient_Extern" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID_Episodi" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID_Cita_CGM" type="xs:int" />
+        <xs:element minOccurs="0" name="Motiu_Anulacio" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AnularDadesEpisodiResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CanviDadesRecepcioDePacient">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="ID_Transaccio" type="q23:guid" />
+        <xs:element minOccurs="0" name="ID_Pacient_Extern" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID_Episodi" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID_Nova_Prova" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Orientacio_diagnostica" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CanviDadesRecepcioDePacientResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CanviDadesRecepcioDePacientResult" nillable="true" type="q24:ArrayOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RecitarPacient">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="ID_Transaccio" type="q25:guid" />
+        <xs:element minOccurs="0" name="ID_Cita_CGM" type="xs:int" />
+        <xs:element minOccurs="0" name="Desde" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Fins" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Maxim_Hores" type="xs:int" />
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/CGM.Services.Integracio" minOccurs="0" name="Franja_Horaria" type="q26:FranjaHoraria" />
+        <xs:element minOccurs="0" name="Hora_inici" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Hora_Fi" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RecitarPacientResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/Cgm.Integracions.CIMA.Business" minOccurs="0" name="RecitarPacientResult" nillable="true" type="q27:ArrayOfHoraReservada" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmarHoraRecitadaPacient">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="ID_Transaccio" type="q28:guid" />
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/Cgm.Integracions.CIMA.Business" minOccurs="0" name="Hora_Reservada" nillable="true" type="q29:HoraReservada" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmarHoraRecitadaPacientResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/Cgm.Integracions.CIMA.Business" minOccurs="0" name="ConfirmarHoraRecitadaPacientResult" nillable="true" type="q30:Cita" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIDEpisodiCGM">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_Pacient_Extern" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID_Episodi_Extern" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIDEpisodiCGMResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetIDEpisodiCGMResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDICOMEstudisUID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_Episodi_CGM" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDICOMEstudisUIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetDICOMEstudisUIDResult" nillable="true" type="q31:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

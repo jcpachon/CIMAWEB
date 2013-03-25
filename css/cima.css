@@ -1,0 +1,345 @@
+INPUT {
+	font-family : Tahoma;
+	font-size : 11px;
+}
+.marco_calendario
+{
+	padding-right: 11px;
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: Arial;
+	background-color: #9999ff;
+}
+.marco_grande
+{
+	padding-right: 11px;
+	font-weight: bold;
+	font-size: 10pt;
+	font-family: Arial;
+	background-color: #484848;
+	padding-left:11px;
+	color : White;
+}
+.fecha_letra
+{
+	padding-right: 11px;
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: Arial;
+	background-color: #484848;
+	padding-left:11px;
+	color : White;
+}
+.fecha_rango
+{
+	padding-right: 11px;
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: Arial;
+	background-color: #8B8B8B;
+	padding-left:11px;
+	color : White;
+}
+.cabecera_formulario{
+	background : Silver;
+	font-family : Tahoma;
+	font-size : x-small;
+	font : bold x-small;
+	padding-left : 11px;
+}
+
+.fondo_cabecera {
+	background : #FF8C00;
+	font-family : Tahoma;
+	font-size : x-small;
+	font-weight : bold;
+	color : #353E46;
+}
+.fondo_pie {
+	background : #FF8C00;
+	font-family : Tahoma;
+	font-size : x-small;
+	font-weight : bold;
+	padding-left : 11px;
+	color : #353E46;
+}
+.fondo_cabecera_a {
+	font-family : Tahoma;
+	font-size : x-small;
+	font-weight : bold;
+	background-color: #9999ff;
+}
+.fondo_pie_a {
+	background-color: #9999ff;
+	font-family : Tahoma;
+	font-size : x-small;
+	font-weight : bold;
+	padding-left : 11px;
+}
+.fondo_cabecera_d {
+	font-family : Tahoma;
+	font-size : x-small;
+	font-weight : bold;
+	background-color: Yellow;
+}
+.fondo_pie_d {
+	background-color: Yellow;
+	font-family : Tahoma;
+	font-size : x-small;
+	padding-left : 11px;
+	font-weight : bold;
+}
+.fondo_cabecera_u {
+	font-family : Tahoma;
+	font-size : x-small;
+	font-weight : bold;
+	background-color: #9ACD32;
+}
+.fondo_pie_u {
+	background-color: #9CCF31;
+	font-family : Tahoma;
+	font-size : x-small;
+	padding-left : 11px;
+	font-weight : bold;
+}
+.fondo_menu_lateral{
+	background : Silver;
+	font-family : Tahoma;
+	font-size : xx-small;
+}
+.fondo_menu{
+	font-family : Tahoma;
+	font-weight : normal;
+	color : White;
+	background-color : Black;
+	font-size : xx-small;
+}
+.fondo_menu_onMouseOver{
+	font-family : Tahoma;
+	font-weight : normal;
+	color : White;
+	background-color : Gray;
+	font-size : xx-small;
+}
+.fondo_formulario {
+	background : #EAEAEA;
+	font-family : Tahoma;
+	font-size : xx-small;
+	font-weight : bold;
+	color : Black;
+	padding-left : 11;
+	border-bottom : 1px solid Black;
+}
+.fondo_formulario_2 {
+	background : #EAEAEA;
+	font-family : Tahoma;
+	font-size : x-small;
+	font-weight : bold;
+	color : Black;
+	padding-left : 11;
+	border-bottom : 1px solid Black;
+}
+.fondo_formulario_2_centrado
+{
+	
+	font-weight: bold;
+	font-size: x-small;
+	background: #eaeaea;
+	color: black;
+	border-bottom: black 1px solid;
+	font-family: Tahoma;
+	text-align: center;
+}
+.letra_grande_negrita{
+	font-family : Tahoma;
+	font-weight : bold;
+	font-size : small;
+}
+.letra_pequena
+{
+	font-size: 8pt;
+	font-family: Tahoma;
+}
+.letra_pequena_negrita
+{
+	font-size: 8pt;
+	font-family: Tahoma;
+	font-weight : bold;
+}
+.letra_pequena_negrita_hand
+{
+	font-size: 8pt;
+	font-family: Tahoma;
+	font-weight : bold;
+	cursor: hand;
+}
+.letra_pequena_centrada
+{
+	font-size: 8pt;
+	font-family: Tahoma;
+	text-align : center;
+}
+.letra_pequena_onMouseOver
+{
+	font-size: 8pt;
+	font-family: Tahoma;
+	background-color : Gray;
+	color : White;
+	cursor:hand;
+}
+.letra_muy_pequena
+{
+	font-size: 7pt;
+	font-family: Tahoma;
+}
+.letra_formulario
+{
+	font-size: 8pt;
+	font-family: Tahoma;
+	padding-left : 11px;
+}
+.menu_lateral_izquierdo
+{
+	background : #C6C9FF;
+	font-family : Tahoma;
+	font-size : 11px;
+	font-weight : bolder;
+	padding-left:11px;
+	color : Black;
+	border : thin groove;
+	border-bottom-width : thin;
+}
+.letra_muy_pequena_negrita
+{
+	font-size: 7pt;
+	font-family: Tahoma;
+	font-weight : bold;
+	text-align : center;
+}
+.letra_muy_pequena_rojo_negrita
+{
+	font-size: 8pt;
+	font-family: Tahoma;
+	font-weight : bold;
+	background-color : Red;
+	color : White;
+	text-align : center;
+}
+.letra_muy_pequena_azul_negrita
+{
+	font-size: 8pt;
+	font-family: Tahoma;
+	font-weight : bold;
+	background-color : Navy;
+	color : White;
+	text-align : center;
+}
+.letra_muy_pequena_verde_negrita
+{
+	font-size: 8pt;
+	font-family: Tahoma;
+	font-weight : bold;
+	background-color : Green;
+	color : White;
+	text-align : center;
+}
+.informe_entregado
+{
+	font-size: 10pt;
+	font-family: Tahoma;
+	font-weight : bold;
+	background-color : Green;
+	color : White;
+	text-align : center;
+}
+.cabecera_titulo_informe
+{
+	font-size: 8pt;
+	font-family: Tahoma;
+	font-weight : bold;
+	background-color : Navy;
+	color : White;
+	text-align : left;
+	padding-left : 11px;
+}
+.cabecera_titulo_informe_rojo
+{
+	font-size: 8pt;
+	font-family: Tahoma;
+	font-weight : bold;
+	background-color : Red;
+	color : White;
+	text-align : left;
+	padding-left : 11px;
+}
+.letra_onMouseOver
+{
+	font-size: 8pt;
+	font-family: Tahoma;
+	color : White;
+	text-align : center;
+	background : Gray;
+	cursor:hand;
+}
+.letra_onMouseOut
+{
+	font-size: 8pt;
+	font-family: Tahoma;
+	color : Black;
+	text-align : center;
+	background : White;
+	cursor:hand;
+}
+.letra{
+	font-family : Tahoma;
+	font-size : x-small;
+}
+.letra_centrada{
+	text-align : center;
+	font-family : Tahoma;
+	font-size : x-small;
+}
+.letra_negrita{
+	font-family : Tahoma;
+	font-size : x-small;
+	font-weight : bold;
+}
+.letra_cursiva{
+	font-family : Tahoma;
+	font-size : x-small;
+	font-style : italic;
+}
+.cabecera_busca_pacientes{
+	background-color : Red;
+	color : White;
+	font-family : Tahoma;
+	font-size : x-small;
+	font-weight : bold;
+	padding-left : 11;
+}
+.fondo_cabecera_e {
+	font-family : Tahoma;
+	font-size : x-small;
+	font-weight : bold;
+	background-color: #F16464;
+}
+.fondo_pie_e {
+	background-color: #F16464;
+	font-family : Tahoma;
+	font-size : x-small;
+	font-weight : bold;
+	padding-left : 11px;
+}
+.fondo_cabecera_l {
+	font-family : Tahoma;
+	font-size : x-small;
+	font-weight : bold;
+	background-color: #9ACD32;
+}
+.fondo_pie_l {
+	background-color: #9ACD32;
+	font-family : Tahoma;
+	font-size : x-small;
+	font-weight : bold;
+	padding-left : 11px;
+}

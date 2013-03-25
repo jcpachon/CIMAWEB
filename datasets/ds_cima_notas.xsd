@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_cima_notas" targetNamespace="http://tempuri.org/ds_cima_notas.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_cima_notas.xsd" xmlns:mstns="http://tempuri.org/ds_cima_notas.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_cima_notas" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="cima_notas">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="pers_key" type="xs:int" />
+							<xs:element name="nota" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ds_cima_notasKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:cima_notas" />
+			<xs:field xpath="mstns:pers_key" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

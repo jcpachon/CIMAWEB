@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_agen_tabla" targetNamespace="http://tempuri.org/ds_agen_tabla.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_agen_tabla.xsd" xmlns:mstns="http://tempuri.org/ds_agen_tabla.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_agen_tabla" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="agen">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="agencode" type="xs:string" />
+							<xs:element name="spdi_key" type="xs:int" />
+							<xs:element name="agenname" type="xs:string" />
+							<xs:element name="agenacti" type="xs:string" />
+							<xs:element name="caltcode" type="xs:string" />
+							<xs:element name="agentypecode" type="xs:string" />
+							<xs:element name="cent_key" type="xs:int" />
+							<xs:element name="agenautodoss" type="xs:string" />
+							<xs:element name="agenflagpacs" type="xs:string" />
+							<xs:element name="agenpriv" type="xs:string" />
+							<xs:element name="agenwarn" type="xs:string" minOccurs="0" />
+							<xs:element name="prod_key" type="xs:int" minOccurs="0" />
+							<xs:element name="msrepl_tran_version" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" />
+							<xs:element name="agenprpo" type="xs:string" />
+							<xs:element name="agenslot" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ds_agen_tablaKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:agen" />
+			<xs:field xpath="mstns:agencode" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

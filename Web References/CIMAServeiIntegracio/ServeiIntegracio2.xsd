@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Cgm.Integracions.CIMA.Business" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Cgm.Integracions.CIMA.Business" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://timor.cetir.org/CIMAServeiIntegracio/ServeiIntegracio.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="Transaccio">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Data_Cancelacio" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Data_Confirmacio" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Data_Creacio" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Data_Ultima_Actualitzacio" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Estat_Transaccio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Transaccio" nillable="true" type="tns:Transaccio" />
+  <xs:complexType name="ArrayOfHoraReservada">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HoraReservada" nillable="true" type="tns:HoraReservada" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHoraReservada" nillable="true" type="tns:ArrayOfHoraReservada" />
+  <xs:complexType name="HoraReservada">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DataHoraReservada" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Durada" type="xs:int" />
+      <xs:element minOccurs="0" name="Grup" type="xs:short" />
+      <xs:element minOccurs="0" name="ID_Centre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID_Cita" type="xs:int" />
+      <xs:element minOccurs="0" name="ID_Interval_Inici" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="ID_Linia" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="ID_Tram" type="xs:int" />
+      <xs:element minOccurs="0" name="N_Intervals" type="xs:unsignedByte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HoraReservada" nillable="true" type="tns:HoraReservada" />
+  <xs:complexType name="Pacient">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Adreca" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CIP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Codi_Postal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cognom1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cognom2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DNI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Data_Naixament" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="E_Mail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID_CGM" type="xs:int" />
+      <xs:element minOccurs="0" name="ID_Pacient_Extern" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mobil" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nom" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Poblacio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Poblacio_Naixament" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Professio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sexe" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefon" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Pacient" nillable="true" type="tns:Pacient" />
+  <xs:complexType name="Cita">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Data_Creacio" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Data_Realitzacio" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID_CGM" type="xs:int" />
+      <xs:element minOccurs="0" name="ID_Centre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID_Episodi_Extern" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID_Estat" type="ser:char" />
+      <xs:element minOccurs="0" name="ID_Institucio_Pagament" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID_Pacient_Extern" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID_Prova" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Orientacio_Diagnostica" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Cita" nillable="true" type="tns:Cita" />
+</xs:schema>

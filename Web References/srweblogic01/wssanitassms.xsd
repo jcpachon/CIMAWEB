@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://ws.sms.sanitas.es/" targetNamespace="http://ws.sms.sanitas.es/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="enviaAdjuntos" type="tns:enviaAdjuntos" />
+  <xs:element name="enviaAdjuntosResponse" type="tns:enviaAdjuntosResponse" />
+  <xs:element name="enviaConParams" type="tns:enviaConParams" />
+  <xs:element name="enviaConParamsResponse" type="tns:enviaConParamsResponse" />
+  <xs:element name="enviaConTexto" type="tns:enviaConTexto" />
+  <xs:element name="enviaConTextoResponse" type="tns:enviaConTextoResponse" />
+  <xs:element name="enviaSencillo" type="tns:enviaSencillo" />
+  <xs:element name="enviaSencilloResponse" type="tns:enviaSencilloResponse" />
+  <xs:element name="enviaTextoProgramacion" type="tns:enviaTextoProgramacion" />
+  <xs:element name="enviaTextoProgramacionResponse" type="tns:enviaTextoProgramacionResponse" />
+  <xs:complexType name="enviaConParams">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:enviaParams" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enviaParams">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="emailA" type="xs:string" />
+      <xs:element minOccurs="0" name="emailCC" type="xs:string" />
+      <xs:element minOccurs="0" name="emailCO" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ficherosAdjuntos" nillable="true" type="tns:ficheroAdjunto" />
+      <xs:element name="funcionalidad" type="xs:int" />
+      <xs:element minOccurs="0" name="horario" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="idioma" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="params" nillable="true" type="xs:string" />
+      <xs:element name="telefono" type="xs:long" />
+      <xs:element minOccurs="0" name="texto" type="xs:string" />
+      <xs:element name="tipoProgramacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ficheroAdjunto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="contenido" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enviaConParamsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enviaAdjuntos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:enviaParams" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enviaAdjuntosResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enviaTextoProgramacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:enviaParams" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enviaTextoProgramacionResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enviaSencillo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:enviaParams" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enviaSencilloResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enviaConTexto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:enviaParams" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enviaConTextoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

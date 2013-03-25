@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_consentimientos" targetNamespace="http://tempuri.org/ds_consentimientos.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_consentimientos.xsd"
+	xmlns:mstns="http://tempuri.org/ds_consentimientos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_consentimientos" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="cima_consentimientos">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="id_consentimiento" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="valor" type="xs:string" minOccurs="0" />
+							<xs:element name="id_usuario" type="xs:string" minOccurs="0" />
+							<xs:element name="fecha_creacion" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="permiso_acceso" type="xs:int" minOccurs="0" />
+							<xs:element name="activo" type="xs:string" minOccurs="0" />
+							<xs:element name="version" type="xs:int" minOccurs="0" />
+							<xs:element name="descripcion" type="xs:string" minOccurs="0" />
+							<xs:element name="informacion" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ds_consentimientosKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:cima_consentimientos" />
+			<xs:field xpath="mstns:id_consentimiento" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

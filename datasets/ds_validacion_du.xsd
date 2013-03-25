@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_validacion_du" targetNamespace="http://tempuri.org/ds_validacion_du.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_validacion_du.xsd"
+	xmlns:mstns="http://tempuri.org/ds_validacion_du.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_validacion_du" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="du">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="invs_key" type="xs:int" minOccurs="0" />
+							<xs:element name="invsdate" type="xs:string" minOccurs="0" />
+							<xs:element name="factura" type="xs:string" minOccurs="0" />
+							<xs:element name="episcode" type="xs:string" minOccurs="0" />
+							<xs:element name="paciente" type="xs:string" minOccurs="0" />
+							<xs:element name="du" type="xs:string" minOccurs="0" />
+							<xs:element name="longitud" type="xs:int" minOccurs="0" />
+							<xs:element name="nota" type="xs:string" minOccurs="0" />
+							<xs:element name="multigarante" type="xs:string" minOccurs="0" />
+							<xs:element name="dc" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

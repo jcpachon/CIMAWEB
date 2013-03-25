@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://www.dermas.net/ws_dermas/service1.asmx?schema=ds_baja_cita" filename="ds_baja_cita.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://www.dermas.net/ws_dermas/service1.asmx?schema=ds_cita" filename="ds_cita.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://www.dermas.net/ws_dermas/service1.asmx?disco" filename="Service1.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://www.dermas.net/ws_dermas/service1.asmx?schema=ds_cambio_estado" filename="ds_cambio_estado.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://www.dermas.net/ws_dermas/service1.asmx?wsdl" filename="Service1.wsdl" />
+  </Results>
+</DiscoveryClientResultsFile>

@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "cima_servicios", "http://localhost/cimaweb/cima_servicios/cima_servicios.vbproj", "{E91B4FD8-1A40-466D-93A3-57EA758368F5}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{E91B4FD8-1A40-466D-93A3-57EA758368F5}.Debug.ActiveCfg = Debug|.NET
+		{E91B4FD8-1A40-466D-93A3-57EA758368F5}.Debug.Build.0 = Debug|.NET
+		{E91B4FD8-1A40-466D-93A3-57EA758368F5}.Release.ActiveCfg = Release|.NET
+		{E91B4FD8-1A40-466D-93A3-57EA758368F5}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

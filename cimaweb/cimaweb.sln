@@ -1,0 +1,56 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CIMA_Clases", "..\CIMA_Clases\CIMA_Clases.vbproj", "{F8F56876-D8F8-46A8-9AC0-6EBE7F230390}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WebControlCIMA", "..\WebControlCIMA\WebControlCIMA.vbproj", "{DC6FAF05-A7EF-43BC-8ABF-DAD0FCA58BDF}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "cimaweb", "http://localhost/cimaweb/cimaweb.vbproj", "{9F5CD35B-28FB-4D08-BCC2-B6356BAE3EFE}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccProjectUniqueName0 = ..\\CIMA_Clases\\CIMA_Clases.vbproj
+		SccLocalPath0 = ..
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection0 = CIMA_Clases\\
+		SccProjectUniqueName1 = ..\\WebControlCIMA\\WebControlCIMA.vbproj
+		SccLocalPath1 = ..
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection1 = WebControlCIMA\\
+		SccProjectName2 = \u0022$/cimaweb_1\u0022,\u0020BAAAAAAA
+		SccLocalPath2 = ..
+		SccProvider2 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection2 = cimaweb\\
+		SolutionUniqueID = {9861AC99-9385-4D56-9CBC-9F097C9C92DE}
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F8F56876-D8F8-46A8-9AC0-6EBE7F230390}.Debug.ActiveCfg = Debug|.NET
+		{F8F56876-D8F8-46A8-9AC0-6EBE7F230390}.Debug.Build.0 = Debug|.NET
+		{F8F56876-D8F8-46A8-9AC0-6EBE7F230390}.Release.ActiveCfg = Release|.NET
+		{F8F56876-D8F8-46A8-9AC0-6EBE7F230390}.Release.Build.0 = Release|.NET
+		{DC6FAF05-A7EF-43BC-8ABF-DAD0FCA58BDF}.Debug.ActiveCfg = Debug|.NET
+		{DC6FAF05-A7EF-43BC-8ABF-DAD0FCA58BDF}.Debug.Build.0 = Debug|.NET
+		{DC6FAF05-A7EF-43BC-8ABF-DAD0FCA58BDF}.Release.ActiveCfg = Release|.NET
+		{DC6FAF05-A7EF-43BC-8ABF-DAD0FCA58BDF}.Release.Build.0 = Release|.NET
+		{9F5CD35B-28FB-4D08-BCC2-B6356BAE3EFE}.Debug.ActiveCfg = Debug|.NET
+		{9F5CD35B-28FB-4D08-BCC2-B6356BAE3EFE}.Debug.Build.0 = Debug|.NET
+		{9F5CD35B-28FB-4D08-BCC2-B6356BAE3EFE}.Release.ActiveCfg = Release|.NET
+		{9F5CD35B-28FB-4D08-BCC2-B6356BAE3EFE}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

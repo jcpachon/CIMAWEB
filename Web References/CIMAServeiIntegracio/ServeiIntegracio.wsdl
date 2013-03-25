@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://tempuri.org/Imports" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://tempuri.org/" name="ServeiIntegracio" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema targetNamespace="http://tempuri.org/Imports">
+      <s:import schemaLocation="http://timor.cetir.org/CIMAServeiIntegracio/ServeiIntegracio.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <s:import schemaLocation="http://timor.cetir.org/CIMAServeiIntegracio/ServeiIntegracio.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <s:import schemaLocation="http://timor.cetir.org/CIMAServeiIntegracio/ServeiIntegracio.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Cgm.Integracions.CIMA.Business" />
+      <s:import schemaLocation="http://timor.cetir.org/CIMAServeiIntegracio/ServeiIntegracio.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CGM.Services.Integracio" />
+      <s:import schemaLocation="http://timor.cetir.org/CIMAServeiIntegracio/ServeiIntegracio.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="IServeiIntegracio_BegginTransaction_InputMessage">
+    <wsdl:part name="parameters" element="tns:BegginTransaction" />
+  </wsdl:message>
+  <wsdl:message name="IServeiIntegracio_BegginTransaction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BegginTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServeiIntegracio_RollbackTransaction_InputMessage">
+    <wsdl:part name="parameters" element="tns:RollbackTransaction" />
+  </wsdl:message>
+  <wsdl:message name="IServeiIntegracio_RollbackTransaction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RollbackTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServeiIntegracio_CommitTransaccio_InputMessage">
+    <wsdl:part name="parameters" element="tns:CommitTransaccio" />
+  </wsdl:message>
+  <wsdl:message name="IServeiIntegracio_CommitTransaccio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CommitTransaccioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServeiIntegracio_GetHoresLliures_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHoresLliures" />
+  </wsdl:message>
+  <wsdl:message name="IServeiIntegracio_GetHoresLliures_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHoresLliuresResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServeiIntegracio_ConfirmarHoraPacient_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmarHoraPacient" />
+  </wsdl:message>
+  <wsdl:message name="IServeiIntegracio_ConfirmarHoraPacient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmarHoraPacientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServeiIntegracio_ForzarHoraPacient_InputMessage">
+    <wsdl:part name="parameters" element="tns:ForzarHoraPacient" />
+  </wsdl:message>
+  <wsdl:message name="IServeiIntegracio_ForzarHoraPacient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ForzarHoraPacientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServeiIntegracio_AssociarCitaCGMEpisodiExtern_InputMessage">
+    <wsdl:part name="parameters" element="tns:AssociarCitaCGMEpisodiExtern" />
+  </wsdl:message>
+  <wsdl:message name="IServeiIntegracio_AssociarCitaCGMEpisodiExtern_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AssociarCitaCGMEpisodiExternResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServeiIntegracio_RecepcioDePacient_InputMessage">
+    <wsdl:part name="parameters" element="tns:RecepcioDePacient" />
+  </wsdl:message>
+  <wsdl:message name="IServeiIntegracio_RecepcioDePacient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RecepcioDePacientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServeiIntegracio_AnularDadesEpisodi_InputMessage">
+    <wsdl:part name="parameters" element="tns:AnularDadesEpisodi" />
+  </wsdl:message>
+  <wsdl:message name="IServeiIntegracio_AnularDadesEpisodi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AnularDadesEpisodiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServeiIntegracio_CanviDadesRecepcioDePacient_InputMessage">
+    <wsdl:part name="parameters" element="tns:CanviDadesRecepcioDePacient" />
+  </wsdl:message>
+  <wsdl:message name="IServeiIntegracio_CanviDadesRecepcioDePacient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CanviDadesRecepcioDePacientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServeiIntegracio_RecitarPacient_InputMessage">
+    <wsdl:part name="parameters" element="tns:RecitarPacient" />
+  </wsdl:message>
+  <wsdl:message name="IServeiIntegracio_RecitarPacient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RecitarPacientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServeiIntegracio_ConfirmarHoraRecitadaPacient_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmarHoraRecitadaPacient" />
+  </wsdl:message>
+  <wsdl:message name="IServeiIntegracio_ConfirmarHoraRecitadaPacient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmarHoraRecitadaPacientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServeiIntegracio_GetIDEpisodiCGM_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIDEpisodiCGM" />
+  </wsdl:message>
+  <wsdl:message name="IServeiIntegracio_GetIDEpisodiCGM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIDEpisodiCGMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServeiIntegracio_GetDICOMEstudisUID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDICOMEstudisUID" />
+  </wsdl:message>
+  <wsdl:message name="IServeiIntegracio_GetDICOMEstudisUID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDICOMEstudisUIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServeiIntegracio">
+    <wsdl:operation name="BegginTransaction">
+      <wsdl:input message="tns:IServeiIntegracio_BegginTransaction_InputMessage" />
+      <wsdl:output message="tns:IServeiIntegracio_BegginTransaction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RollbackTransaction">
+      <wsdl:input message="tns:IServeiIntegracio_RollbackTransaction_InputMessage" />
+      <wsdl:output message="tns:IServeiIntegracio_RollbackTransaction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CommitTransaccio">
+      <wsdl:input message="tns:IServeiIntegracio_CommitTransaccio_InputMessage" />
+      <wsdl:output message="tns:IServeiIntegracio_CommitTransaccio_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHoresLliures">
+      <wsdl:input message="tns:IServeiIntegracio_GetHoresLliures_InputMessage" />
+      <wsdl:output message="tns:IServeiIntegracio_GetHoresLliures_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmarHoraPacient">
+      <wsdl:input message="tns:IServeiIntegracio_ConfirmarHoraPacient_InputMessage" />
+      <wsdl:output message="tns:IServeiIntegracio_ConfirmarHoraPacient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ForzarHoraPacient">
+      <wsdl:input message="tns:IServeiIntegracio_ForzarHoraPacient_InputMessage" />
+      <wsdl:output message="tns:IServeiIntegracio_ForzarHoraPacient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AssociarCitaCGMEpisodiExtern">
+      <wsdl:input message="tns:IServeiIntegracio_AssociarCitaCGMEpisodiExtern_InputMessage" />
+      <wsdl:output message="tns:IServeiIntegracio_AssociarCitaCGMEpisodiExtern_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RecepcioDePacient">
+      <wsdl:input message="tns:IServeiIntegracio_RecepcioDePacient_InputMessage" />
+      <wsdl:output message="tns:IServeiIntegracio_RecepcioDePacient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AnularDadesEpisodi">
+      <wsdl:input message="tns:IServeiIntegracio_AnularDadesEpisodi_InputMessage" />
+      <wsdl:output message="tns:IServeiIntegracio_AnularDadesEpisodi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CanviDadesRecepcioDePacient">
+      <wsdl:input message="tns:IServeiIntegracio_CanviDadesRecepcioDePacient_InputMessage" />
+      <wsdl:output message="tns:IServeiIntegracio_CanviDadesRecepcioDePacient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RecitarPacient">
+      <wsdl:input message="tns:IServeiIntegracio_RecitarPacient_InputMessage" />
+      <wsdl:output message="tns:IServeiIntegracio_RecitarPacient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmarHoraRecitadaPacient">
+      <wsdl:input message="tns:IServeiIntegracio_ConfirmarHoraRecitadaPacient_InputMessage" />
+      <wsdl:output message="tns:IServeiIntegracio_ConfirmarHoraRecitadaPacient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIDEpisodiCGM">
+      <wsdl:input message="tns:IServeiIntegracio_GetIDEpisodiCGM_InputMessage" />
+      <wsdl:output message="tns:IServeiIntegracio_GetIDEpisodiCGM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDICOMEstudisUID">
+      <wsdl:input message="tns:IServeiIntegracio_GetDICOMEstudisUID_InputMessage" />
+      <wsdl:output message="tns:IServeiIntegracio_GetDICOMEstudisUID_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSEInteroperability" type="tns:IServeiIntegracio">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BegginTransaction">
+      <soap:operation soapAction="http://tempuri.org/IServeiIntegracio/BegginTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RollbackTransaction">
+      <soap:operation soapAction="http://tempuri.org/IServeiIntegracio/RollbackTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CommitTransaccio">
+      <soap:operation soapAction="http://tempuri.org/IServeiIntegracio/CommitTransaccio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHoresLliures">
+      <soap:operation soapAction="http://tempuri.org/IServeiIntegracio/GetHoresLliures" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmarHoraPacient">
+      <soap:operation soapAction="http://tempuri.org/IServeiIntegracio/ConfirmarHoraPacient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForzarHoraPacient">
+      <soap:operation soapAction="http://tempuri.org/IServeiIntegracio/ForzarHoraPacient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AssociarCitaCGMEpisodiExtern">
+      <soap:operation soapAction="http://tempuri.org/IServeiIntegracio/AssociarCitaCGMEpisodiExtern" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecepcioDePacient">
+      <soap:operation soapAction="http://tempuri.org/IServeiIntegracio/RecepcioDePacient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnularDadesEpisodi">
+      <soap:operation soapAction="http://tempuri.org/IServeiIntegracio/AnularDadesEpisodi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CanviDadesRecepcioDePacient">
+      <soap:operation soapAction="http://tempuri.org/IServeiIntegracio/CanviDadesRecepcioDePacient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecitarPacient">
+      <soap:operation soapAction="http://tempuri.org/IServeiIntegracio/RecitarPacient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmarHoraRecitadaPacient">
+      <soap:operation soapAction="http://tempuri.org/IServeiIntegracio/ConfirmarHoraRecitadaPacient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIDEpisodiCGM">
+      <soap:operation soapAction="http://tempuri.org/IServeiIntegracio/GetIDEpisodiCGM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDICOMEstudisUID">
+      <soap:operation soapAction="http://tempuri.org/IServeiIntegracio/GetDICOMEstudisUID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsHttpWCFversion" type="tns:IServeiIntegracio">
+    <wsp:PolicyReference URI="#wsHttpWCFversion_policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+    <wsdl:operation name="BegginTransaction">
+      <soap12:operation soapAction="http://tempuri.org/IServeiIntegracio/BegginTransaction" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RollbackTransaction">
+      <soap12:operation soapAction="http://tempuri.org/IServeiIntegracio/RollbackTransaction" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CommitTransaccio">
+      <soap12:operation soapAction="http://tempuri.org/IServeiIntegracio/CommitTransaccio" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHoresLliures">
+      <soap12:operation soapAction="http://tempuri.org/IServeiIntegracio/GetHoresLliures" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmarHoraPacient">
+      <soap12:operation soapAction="http://tempuri.org/IServeiIntegracio/ConfirmarHoraPacient" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForzarHoraPacient">
+      <soap12:operation soapAction="http://tempuri.org/IServeiIntegracio/ForzarHoraPacient" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AssociarCitaCGMEpisodiExtern">
+      <soap12:operation soapAction="http://tempuri.org/IServeiIntegracio/AssociarCitaCGMEpisodiExtern" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecepcioDePacient">
+      <soap12:operation soapAction="http://tempuri.org/IServeiIntegracio/RecepcioDePacient" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnularDadesEpisodi">
+      <soap12:operation soapAction="http://tempuri.org/IServeiIntegracio/AnularDadesEpisodi" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CanviDadesRecepcioDePacient">
+      <soap12:operation soapAction="http://tempuri.org/IServeiIntegracio/CanviDadesRecepcioDePacient" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecitarPacient">
+      <soap12:operation soapAction="http://tempuri.org/IServeiIntegracio/RecitarPacient" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmarHoraRecitadaPacient">
+      <soap12:operation soapAction="http://tempuri.org/IServeiIntegracio/ConfirmarHoraRecitadaPacient" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIDEpisodiCGM">
+      <soap12:operation soapAction="http://tempuri.org/IServeiIntegracio/GetIDEpisodiCGM" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDICOMEstudisUID">
+      <soap12:operation soapAction="http://tempuri.org/IServeiIntegracio/GetDICOMEstudisUID" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServeiIntegracio">
+    <wsdl:port name="WSEInteroperability" binding="tns:WSEInteroperability">
+      <soap:address location="http://timor.cetir.org/CIMAServeiIntegracio/ServeiIntegracio.svc/WSE" />
+    </wsdl:port>
+    <wsdl:port name="wsHttpWCFversion" binding="tns:wsHttpWCFversion">
+      <soap12:address location="http://timor.cetir.org/CIMAServeiIntegracio/ServeiIntegracio.svc/WCF" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsa10:EndpointReference xmlns:wsa10="http://www.w3.org/2005/08/addressing">
+        <wsa10:Address>http://timor.cetir.org/CIMAServeiIntegracio/ServeiIntegracio.svc/WCF</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
